@@ -10,24 +10,28 @@ export default async function Experience(){
         title:"Full Stack React Native & Laravel Developer",
         company:"Truckload",
         time:"( 2013 - 2015 )",
+        desc:"Lorem Ipsum"
        
     },
     {
         title:"React Native Developer",
         company:"Synx",
         time:"( 2016 - 2019 )",
+        desc:"Lorem Ipsum"
        
     },
     {
         title:"Core PHP Developer",
         company:"TRzameen.com",
         time:"( 2018 - 2019 )",
+        desc:"Lorem Ipsum"
        
     },
     {
         title:"Product Manager and Full Stack Developer",
         company:"Onism Solutions",
         time:"( 2019 - running )",
+        desc:"Lorem Ipsum"
     }
  ]
     return(
