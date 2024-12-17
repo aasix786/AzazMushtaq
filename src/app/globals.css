@@ -4,13 +4,13 @@
 
 @font-face {
   font-family: 'jost';
-  src:url(/Font/Jost-Regular.ttf);
+  src:url(../../public/Font/Jost-Regular.ttf);
   
 }
 
 @font-face {
   font-family: 'jostMedium';
-  src:url(/Font/Jost-Medium.ttf);
+  src:url(../../public//Font/Jost-Medium.ttf);
   
 }
 

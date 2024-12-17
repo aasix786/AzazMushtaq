@@ -1,11 +1,18 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+let nextConfig = {
     output: 'export',
     distDir:"dist",
-    basePath: '/AzazMushtaq',
+   
     images: {
       unoptimized: true,
     },
+  reactStrictMode: true,
+ 
 };
-
+console.log("process.env.NODE_ENV")
+console.log(process.env.NODE_ENV)
+if(process.env.NODE_ENV != "development"){
+    nextConfig.basePath = "/AzazMushtaq"
+}
+ 
 export default nextConfig;
