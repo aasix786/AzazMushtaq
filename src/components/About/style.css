@@ -1,0 +1,67 @@
+.rotate-animation {
+    animation: rotate 10s linear infinite; /* 10s duration, infinite loop */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+  
+  .container {
+    display: flex;
+    align-items: center;
+    height:350px;
+    overflow: hidden;
+  }
+  
+  .scroll {
+    white-space: nowrap;
+   
+  }
+  
+  .scroll div {
+    display: flex;
+    gap: 2em;
+  }
+  
+  
+  
+  .RightToLeft {
+    animation: RightToLeft 10s infinite linear;
+  }
+
+  .LeftToRight p{
+    font-family: sans-serif;
+    -webkit-text-stroke:1px black;
+    -webkit-text-fill-color:transparent
+    
+  }
+  
+  @keyframes  RightToLeft {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .LeftToRight {
+    animation: LeftToRight 10s infinite linear;
+  }
+  
+  @keyframes  LeftToRight {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }

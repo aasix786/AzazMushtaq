@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'jost';
+  src:url(/Font/Jost-Regular.ttf);
+  
+}
+
+@font-face {
+  font-family: 'jostMedium';
+  src:url(/Font/Jost-Medium.ttf);
+  
+}
+
+div , section , p , h1 , h2 , ul{
+  font-family: "jost";
+  
+}
+
+html{
+  scroll-behavior: smooth !important;
+}
+
+
+
+
+@keyframes rotateX {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+.rotate-x-360 {
+  animation: rotateX 0.5s ease;
+}
+
+
+
+
+

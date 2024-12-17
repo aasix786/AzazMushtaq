@@ -1,0 +1,26 @@
+.circle-border {
+    position: relative;
+    border-radius: 50%;
+    width: 10rem; /* Adjust width and height as needed */
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white; /* Inner background */
+}
+
+.circle-border::before {
+    content: '';
+    position: absolute;
+    
+    width: calc(100% + 10px); /* Adjust width based on border thickness */
+    height: calc(100% + 10px); /* Adjust height based on border thickness */
+    border-radius: 50%;
+    background: conic-gradient(
+      #88db66 0deg, 
+      #88db66 288deg, /* 80% */
+      #d6d6d6 288deg, 
+      #d6d6d6 360deg
+    );
+    z-index: -1; 
+}
