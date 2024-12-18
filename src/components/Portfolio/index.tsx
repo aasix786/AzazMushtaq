@@ -29,8 +29,8 @@ interface Project {
 export default function Portfolio() {
     const projects: Project[] = [ // Specify the type of projects
         {
-            type: "Web Design",
-            title: "Software Design for QuboHub",
+            type: "Web Development",
+            title: "Full Stack Development in a team for Clicky - E-commerce Store",
             img: Images.clickyWeb,
             detail: [
                 {
@@ -49,8 +49,8 @@ export default function Portfolio() {
             ]
         },
         {
-            type: "Development",
-            title: "Website Development for ABC Corporation",
+            type: "Mobile Application",
+            title: "Cross Platform React Native Development for Interioraty ",
             img: Images.mealWeb,
             detail: [
                 {
@@ -68,7 +68,7 @@ export default function Portfolio() {
             ]
         },
         {
-            type: "Development",
+            type: "Full Stack Development",
             title: "Website Development for ABC Corporation",
             img: Images.jolibeeWeb,
             detail: [
@@ -84,6 +84,26 @@ export default function Portfolio() {
                     task: "Full Stack Development",
                     Budget: "$5000",
                     tags: ["Development", "E-commerce"]
+                }
+            ]
+        },
+        {
+            type: "Product Development",
+            title: "Mobile and Web Application development for SetMore",
+            img: Images.jolibeeWeb,
+            detail: [
+                {
+                    img: Images.jolibeeWeb,
+                    imgMob:Images.clickyMob,
+                    heading: "Setmore",
+                    desc: "Setmore is an online appointment scheduling platform designed for businesses and professionals to streamline bookings and manage client appointments. It offers an intuitive interface with features like calendar integration, automated reminders, and payment processing. Users can create customizable booking pages, enabling clients to book services 24/7. The platform supports team scheduling, making it ideal for businesses of all sizes. Additionally, Setmore integrates with popular apps like Zoom, Google Calendar, and Facebook, enhancing productivity and connectivity.",
+                    type: "Development",
+                    client: "ABC Corp",
+                    duration: "1 month",
+                    link:"https://www.setmore.com/",
+                    task: "Product Development",
+                    Budget: "$5000",
+                    tags: ["Appointment Scheduling", "Business Productivity Tool"]
                 }
             ]
         }
@@ -109,12 +129,12 @@ export default function Portfolio() {
                 <h1 className="text-3xl text-center font-semibold sm:text-[50px] md:text-[70px] my-10">My Recent Works</h1>
                 {
                     projects.map((item, index) => (
-                        <section key={index} className="py-10 border-t-[1px] border-b-[1px] flex flex-col lg:flex-row group justify-between">
+                        <section key={index} className="py-10 border-t-[1px] border-b-[1px] flex flex-col xl:flex-row group justify-between">
                             <div className="flex flex-col sm:flex-row justify-between items-center gap-20">
-                                <p className="text-lg font-medium whitespace-nowrap">{item.type}</p>
-                                <h1 className="text-2xl text-center sm:text-left lg:text-[50px] font-bold max-w-[600px] !leading-[70px]">{item.title}</h1>
+                                <p className="text-lg font-medium  lg:w-[180px]">{item.type}</p>
+                                <h1 className="text-2xl text-center sm:text-left lg:text-[35px] font-bold max-w-[600px] !leading-[70px]">{item.title}</h1>
                             </div>
-                            <div className="flex items-center justify-between sm:gap-20">
+                            <div className="flex items-center justify-between sm:gap-20 lg:gap-10">
                                 <Image
                                     className="w-48 shadow-lg rounded-lg transition-transform duration-500 ease-in-out"
                                     src={item.img}

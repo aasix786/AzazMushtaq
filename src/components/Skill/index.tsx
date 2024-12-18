@@ -12,14 +12,13 @@ export default async function Skill() {
             Growing Over Time
           </h1>
           <p className="text-[#4D4C5C] lg:text-xl my-5">
-            Sed ut perspiciatis unde omnis iste natus kobita tumi sopno charini
-            hoye khbor nio na sit voluptatem.
+          With a commitment to continuous learning, I have developed a diverse skill set that spans web, software, and hardware development, along with system applications and project management.
           </p>
         </section>
         <section className="lg:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-5">
           <div className=" flex flex-col items-center">
             <div className="circle-border ">
-              <p className=" text-3xl font-bold">80%</p>
+              <p className=" text-3xl font-bold">90%</p>
             </div>
             <h1 className=" text-2xl font-semibold mt-4 text-center ">
               Web Development
@@ -27,47 +26,47 @@ export default async function Skill() {
           </div>
 
           <div className=" flex flex-col items-center">
-            <div className="circle-border ">
+            <div className="circle-border2 ">
+              <p className=" text-3xl font-bold">95%</p>
+            </div>
+            <h1 className=" text-2xl font-semibold mt-4 text-center ">
+              Mobile App Development
+            </h1>
+          </div>
+
+          <div className=" flex flex-col items-center">
+            <div className="circle-border3 ">
               <p className=" text-3xl font-bold">80%</p>
             </div>
             <h1 className=" text-2xl font-semibold mt-4 text-center ">
-              Web Development
+            Software Development
+            </h1>
+          </div>
+
+          <div className=" flex flex-col items-center">
+            <div className="circle-border4 ">
+              <p className=" text-3xl font-bold">75%</p>
+            </div>
+            <h1 className=" text-2xl font-semibold mt-4 text-center ">
+            System Applications
             </h1>
           </div>
 
           <div className=" flex flex-col items-center">
             <div className="circle-border ">
-              <p className=" text-3xl font-bold">80%</p>
+              <p className=" text-3xl font-bold">90%</p>
             </div>
             <h1 className=" text-2xl font-semibold mt-4 text-center ">
-              Web Development
+            Project Management
             </h1>
           </div>
 
           <div className=" flex flex-col items-center">
-            <div className="circle-border ">
-              <p className=" text-3xl font-bold">80%</p>
+            <div className="circle-border5 ">
+              <p className=" text-3xl font-bold">85%</p>
             </div>
             <h1 className=" text-2xl font-semibold mt-4 text-center ">
-              Web Development
-            </h1>
-          </div>
-
-          <div className=" flex flex-col items-center">
-            <div className="circle-border ">
-              <p className=" text-3xl font-bold">80%</p>
-            </div>
-            <h1 className=" text-2xl font-semibold mt-4 text-center ">
-              Web Development
-            </h1>
-          </div>
-
-          <div className=" flex flex-col items-center">
-            <div className="circle-border ">
-              <p className=" text-3xl font-bold">80%</p>
-            </div>
-            <h1 className=" text-2xl font-semibold mt-4 text-center ">
-              Web Development
+            Data Administration
             </h1>
           </div>
         </section>

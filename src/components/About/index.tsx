@@ -30,7 +30,10 @@ export default function About() {
 
   return (
     <>
-      <main id="about" className="p-10 bg-white py-20 flex flex-col md:flex-row  gap-20  ">
+      <main
+        id="about"
+        className="p-10 bg-white py-20 flex flex-col md:flex-row  gap-20  "
+      >
         <section className="w-full md:w-2/5 relative ">
           <Image
             data-aos="fade-right"
@@ -53,61 +56,64 @@ export default function About() {
             className="absolute w-60 bottom-48 left-[-70px] rotate-animation"
             alt=""
           /> */}
-         
-
         </section>
         <section className="md:w-3/5">
-            <h1 className=" text-[#80DB66] uppercase text-xl tracking-widest">About Me</h1>
-            <h1 className="text-4xl tracking-widest font-semibold lg:text-[60px] leading-tight ">I Develop System that Works</h1>
-            <p className="text-[#4D4C5C] lg:text-xl my-5">{"As the CTO and Full Stack Developer at Onism Solution, I am dedicated to creating innovative software solutions that transform industries. With a Master's in Computer Science and extensive experience across various programming languages, frameworks, and databases, I specialize in building robust, scalable applications that deliver exceptional user experiences."}</p>
-            <hr />
+          <h1 className=" text-[#80DB66] uppercase text-xl tracking-widest">
+            About Me
+          </h1>
+          <h1 className="text-4xl tracking-widest font-semibold lg:text-[60px] leading-tight ">
+            I Develop System that Works
+          </h1>
+          <p className="text-[#4D4C5C] lg:text-xl my-5">
+            {
+              "As the CTO and Full Stack Developer at Onism Solution, I am dedicated to creating innovative software solutions that transform industries. With a Master's in Computer Science and extensive experience across various programming languages, frameworks, and databases, I specialize in building robust, scalable applications that deliver exceptional user experiences."
+            }
+          </p>
+          <hr />
 
-            
-            <section className="my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 whitespace-nowrap ">
- 
-  <div className="grid grid-cols-2  ">
-    <ul className="flex flex-col gap-5">
-      <li className="text-[#4D4C5C] font-semibold text-lg">Name</li>
-      <li className="text-[#4D4C5C] font-semibold text-lg">Age</li>
-      <li className="text-[#4D4C5C] font-semibold text-lg">Occupation</li>
-    </ul>
-    <ul className="flex flex-col w-1/2 sm:w-full gap-5">
-      <li className="text-lg">Azaz Mushtaq</li>
-      <li className="text-lg">29 Years</li>
-      <li className="text-lg">System Engineer</li>
-    </ul>
-  </div>
-
-
-  <div className="grid grid-cols-2 mt-5 sm:mt-0 md:mt-5 lg:mt-0 ">
-    <ul className="flex flex-col gap-5">
-      <li className="text-[#4D4C5C] font-semibold text-lg">Phone</li>
-      <li className="text-[#4D4C5C] font-semibold text-lg">Email</li>
-      <li className="text-[#4D4C5C] font-semibold text-lg">Nationality</li>
-    </ul>
-    <ul className="flex flex-col w-1/2 sm:w-full gap-5">
-      <li className="text-lg">+123 456 7890</li>
-      <li className="text-lg">hello@qubohub.com</li>
-      <li className="text-lg">Pakistani</li>
-    </ul>
-  </div>
-</section>
-<hr />
-
-<div className=" flex flex-col sm:flex-row items-center gap-10 mt-10">
-  <Image src={Images.signature} alt=""/>
-  <span className=" flex gap-10 items-center" >
-    <h1 className=" uppercase text-xl font-semibold">Bruce Wayne</h1>
-    <p className="text-[#4D4C5C] text-lg">Software Architect, Google Inc.</p>
-  </span>
-</div>
-
-
-
-           
+          <section className="my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 whitespace-nowrap ">
+            <div className="grid grid-cols-2  ">
+              <ul className="flex flex-col gap-5">
+                <li className="text-[#4D4C5C] font-semibold text-lg">Name</li>
+                <li className="text-[#4D4C5C] font-semibold text-lg">Age</li>
+                <li className="text-[#4D4C5C] font-semibold text-lg">
+                  Occupation
+                </li>
+              </ul>
+              <ul className="flex flex-col w-1/2 sm:w-full gap-5">
+                <li className="text-lg">Azaz Mushtaq</li>
+                <li className="text-lg">29 Years</li>
+                <li className="text-lg">System Engineer</li>
+              </ul>
+            </div>
+            <div className="grid grid-cols-2 mt-5 sm:mt-0 md:mt-5 lg:mt-0 ">
+              <ul className="flex flex-col gap-5">
+                <li className="text-[#4D4C5C] font-semibold text-lg">Phone</li>
+                <li className="text-[#4D4C5C] font-semibold text-lg">Email</li>
+                <li className="text-[#4D4C5C] font-semibold text-lg">
+                  Nationality
+                </li>
+              </ul>
+              <ul className="flex flex-col w-1/2 sm:w-full gap-5">
+                <li className="text-lg">+1 916 857 8156</li>
+                <li className="text-lg">aziijnab@gmail.com</li>
+                <li className="text-lg">Pakistani</li>
+              </ul>
+            </div>
+          </section>
+          <hr />
+          {/* <div className=" flex flex-col sm:flex-row items-center gap-10 mt-10">
+            <Image src={Images.signature} alt="" />
+            <span className=" flex gap-10 items-center">
+              <h1 className=" uppercase text-xl font-semibold">Bruce Wayne</h1>
+              <p className="text-[#4D4C5C] text-lg">
+                Software Architect, Google Inc.
+              </p>
+            </span>
+          </div> */}
         </section>
       </main>
-     <Animation/>
+      <Animation />
     </>
   );
 }
