@@ -2,9 +2,9 @@
 import { Images } from "@/utills/Images";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { FaFacebookF, FaYoutube } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
+// import { FaFacebookF, FaYoutube } from "react-icons/fa";
+// import { FaTwitter } from "react-icons/fa";
+// import { FaLinkedinIn } from "react-icons/fa";
 
 import "./style.css";
 import Link from "next/link";

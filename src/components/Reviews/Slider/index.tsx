@@ -24,7 +24,7 @@ export default function Slider() {
             cssMode={true}
             pagination={{
               clickable: true,
-              el: ".custom-pagination", // Custom class for pagination
+              el: ".custom-pagination", 
             }}
             mousewheel={true}
             keyboard={true}
@@ -33,7 +33,7 @@ export default function Slider() {
           >
             <SwiperSlide className="p-5 py-10">
               <p className="text-2xl">
-              "Working with Azaz was a game-changer for our project. His expertise in web development not only improved our site’s functionality but also enhanced user engagement. I highly recommend him!"
+{              "Working with Azaz was a game-changer for our project. His expertise in web development not only improved our site’s functionality but also enhanced user engagement. I highly recommend him!"}
               </p>
               <p className="font-semibold mt-5">Daria Pechaiko</p>
               <i>Virtua Digital</i>
@@ -41,7 +41,7 @@ export default function Slider() {
 
             <SwiperSlide className="p-5 py-10">
               <p className="text-2xl">
-              "Azaz brought our mobile app vision to life with his innovative approach and attention to detail. His commitment to delivering high-quality results made the entire process seamless."
+             { "Azaz brought our mobile app vision to life with his innovative approach and attention to detail. His commitment to delivering high-quality results made the entire process seamless."}
               </p>
               <p className="font-semibold mt-5">Patrik Jalkell</p>
               <i>Mirago Media AB.</i>
@@ -49,7 +49,7 @@ export default function Slider() {
 
             <SwiperSlide className="p-5 py-10">
               <p className="text-2xl">
-              "From the initial consultation to the final launch, Azaz demonstrated exceptional skill and dedication. His ability to understand our needs and translate them into effective solutions was impressive."
+             { "From the initial consultation to the final launch, Azaz demonstrated exceptional skill and dedication. His ability to understand our needs and translate them into effective solutions was impressive."}
               </p>
               <p className="font-semibold mt-5">Peter Jakubicki</p>
               <i>FlycoGo</i>
