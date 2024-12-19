@@ -7,23 +7,17 @@ export default async function Education(){
 
  const data=[
     {
-        title:"Senior System Engineer",
-        company:"QuboHub",
-        time:"( 2018 - Running )",
-        desc:"Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae et vitae ullam molesti quae quasi."
+        title:"Masters of Science in Computer Science",
+        company:"FAST - National University",
+        time:"( 2019 - 2021 )",
+        desc:"Gained in-depth knowledge in advanced computing topics, including artificial intelligence, data science, and software architecture. This program strengthened my skills in research and problem-solving, preparing me to tackle complex challenges in software development and innovation."
     },
     {
-        title:"Senior System Engineer",
-        company:"QuboHub",
-        time:"( 2018 - Running )",
-        desc:"Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae et vitae ullam molesti quae quasi."
+        title:"Bachelor of Science in Computer Science",
+        company:"Arid Agriculture University",
+        time:"( 2014 - 2018 )",
+        desc:"Developed a strong foundation in software engineering, algorithms, and systems design, with a focus on real-world applications and problem-solving in both web and mobile development."
     },
-    {
-        title:"Senior System Engineer",
-        company:"QuboHub",
-        time:"( 2018 - Running )",
-        desc:"Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae et vitae ullam molesti quae quasi."
-    }
  ]
     return(
         <>

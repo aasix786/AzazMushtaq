@@ -2,11 +2,12 @@
 import { Images } from "@/utills/Images";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { FaFacebookF, FaYoutube } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
+// import { FaFacebookF, FaYoutube } from "react-icons/fa";
+// import { FaTwitter } from "react-icons/fa";
+// import { FaLinkedinIn } from "react-icons/fa";
 
 import "./style.css";
+import Link from "next/link";
 
 export default function Hero() {
   const styling = {
@@ -48,9 +49,11 @@ export default function Hero() {
             />
           </div>
           <div className="flex justify-center lg:justify-start my-10">
-            <button className="bg-[#80DB66] p-2 px-4 text-center md:py-4 md:px-10 tracking-widest font-semibold uppercase rounded-md text-white">
+           <Link href={'https://www.linkedin.com/in/azaz-mushtaq/'}>
+           <button className="bg-[#80DB66] p-2 px-4 text-center md:py-4 md:px-10 tracking-widest font-semibold uppercase rounded-md text-white">
               Say Hello
             </button>
+           </Link>
           </div>
           <Image
             className="hidden lg:!block absolute left-0 bottom-10 "
@@ -79,7 +82,7 @@ export default function Hero() {
             alt=""
           />
         </section>
-        <section className="hidden lg:!block h-60 lg:!absolute right-4 top-52">
+        {/* <section className="hidden lg:!block h-60 lg:!absolute right-4 top-52">
           <div className="p-5 border-[1px] border-slate-700  cursor-pointer rounded-md hover:bg-[#80DB66] hover-rotate-x-360 transition-transform duration-500">
             <FaFacebookF className="text-xl text-white rotate-x-360" />
           </div>
@@ -92,7 +95,7 @@ export default function Hero() {
           <div className="p-5 border-[1px] border-slate-700  cursor-pointer rounded-md hover:bg-[#80DB66] hover-rotate-x-360 transition-transform duration-500">
             <FaYoutube className="text-xl text-white rotate-x-360" />
           </div>
-        </section>
+        </section> */}
       </main>
     </>
   );

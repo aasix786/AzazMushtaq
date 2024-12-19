@@ -7,31 +7,31 @@ export default async function Experience(){
 
  const data=[
     {
-        title:"Full Stack React Native & Laravel Developer",
+        title:"Core PHP Developer",
+        company:"TRzameen.com",
+        time:"( 2016 - 2017 )",
+        desc:"Developed robust back-end systems and optimized core functionalities, enhancing the user experience through clean, efficient, and maintainable code."
+       
+    },
+    {
+        title:"Full Stack React Native & Backend Developer",
         company:"Truckload",
-        time:"( 2013 - 2015 )",
-        desc:"Lorem Ipsum"
+        time:"( 2017 - 2018 )",
+        desc:"Built full-stack solutions using React Native and Laravel, delivering scalable applications that streamline operations and provide exceptional user experiences."
        
     },
     {
         title:"React Native Developer",
         company:"Synx",
-        time:"( 2016 - 2019 )",
-        desc:"Lorem Ipsum"
-       
-    },
-    {
-        title:"Core PHP Developer",
-        company:"TRzameen.com",
         time:"( 2018 - 2019 )",
-        desc:"Lorem Ipsum"
+        desc:"Collaborated on cross-platform mobile apps with an emphasis on performance, user-friendly interfaces, and consistency across iOS and Android platforms"
        
     },
     {
         title:"Product Manager and Full Stack Developer",
         company:"Onism Solutions",
-        time:"( 2019 - running )",
-        desc:"Lorem Ipsum"
+        time:"( 2019 - Present )",
+        desc:"Overseeing product development and leading a dynamic team, I contribute to full-stack projects that prioritize user engagement and seamless functionality across platforms."
     }
  ]
     return(

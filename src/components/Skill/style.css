@@ -1,7 +1,7 @@
-.circle-border {
+.circle-border , .circle-border2 , .circle-border3 , .circle-border4 , .circle-border5 {
     position: relative;
     border-radius: 50%;
-    width: 10rem; /* Adjust width and height as needed */
+    width: 10rem; 
     height: 10rem;
     display: flex;
     align-items: center;
@@ -9,18 +9,64 @@
     background: white; /* Inner background */
 }
 
-.circle-border::before {
+.circle-border::before , .circle-border2::before , .circle-border3::before , .circle-border4::before , .circle-border5::before {
     content: '';
     position: absolute;
-    
-    width: calc(100% + 10px); /* Adjust width based on border thickness */
-    height: calc(100% + 10px); /* Adjust height based on border thickness */
+    width: calc(100% + 10px);
+    height: calc(100% + 10px); 
     border-radius: 50%;
     background: conic-gradient(
       #88db66 0deg, 
-      #88db66 288deg, /* 80% */
-      #d6d6d6 288deg, 
+      #88db66 320deg, 
+      #d6d6d6 320deg, 
       #d6d6d6 360deg
     );
     z-index: -1; 
 }
+
+.circle-border2::before {
+    background: conic-gradient(
+      #88db66 0deg, 
+      #88db66 340deg, /* 80% */
+      #d6d6d6 340deg, 
+      #d6d6d6 360deg
+    );
+
+}
+
+.circle-border3::before {
+      background: conic-gradient(
+      #88db66 0deg, 
+      #88db66 298deg, 
+      #d6d6d6 298deg, 
+      #d6d6d6 360deg
+    );
+
+}
+
+.circle-border4::before {
+  background: conic-gradient(
+  #88db66 0deg, 
+  #88db66 270deg, 
+  #d6d6d6 270deg, 
+  #d6d6d6 360deg
+);
+
+
+
+}
+
+.circle-border5::before {
+  background: conic-gradient(
+  #88db66 0deg, 
+  #88db66 300deg, 
+  #d6d6d6 300deg, 
+  #d6d6d6 360deg
+);
+
+
+
+}
+
+
+

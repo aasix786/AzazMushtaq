@@ -78,22 +78,22 @@ export default function Navbar() {
             </li>
            </Link>
           </ul>
-          <button
+          {/* <button
             className={`border-[1px] text-white rounded-md border-[#80DB66] uppercase hover:bg-[#80DB66] transition-all duration-300 ease-in-out ${
               sticky ? " px-4 py-[6px] " : "py-2 px-8"
             }`}
           >
             Download CV
-          </button>
+          </button> */}
         </section>
         <section className="flex items-center  lg:!hidden ">
-          <button
+          {/* <button
             className={`border-[1px] text-white mr-3 sm:mr-10 rounded-md border-[#80DB66] uppercase hover:bg-[#80DB66] p-2 px-8 transition-all duration-300 ease-in-out ${
               sticky ? "py-[6px] px-6" : " px-4"
             }`}
           >
             Download CV
-          </button>
+          </button> */}
           <button onClick={toggleDrawer}>
             <IoMenu className=" text-4xl text-[#80DB66]" />
           </button>
@@ -109,14 +109,25 @@ export default function Navbar() {
                 className=" text-2xl absolute right-2 top-2 text-white"
               />
               <ul className="flex flex-col mt-20 gap-5 text-white">
-                <li className="p-3 bg-white text-black  cursor-pointer">
+               <Link href={'/#home'}>
+               <li  onClick={toggleDrawer} className="p-3 hover:bg-white hover:text-black  cursor-pointer">
                   Home
                 </li>
-                <li className="p-3  cursor-pointer">About</li>
-                <li className="p-3  cursor-pointer">Works</li>
-                <li className="p-3  cursor-pointer">Service</li>
-                <li className="p-3  cursor-pointer">Contact</li>
-                <li className="p-3  cursor-pointer">Blog</li>
+               </Link>
+               <Link href={'/#about'}>
+               <li  onClick={toggleDrawer} className="p-3  cursor-pointer hover:bg-white hover:text-black">About</li>
+               </Link>
+               <Link href={'/#work'}>
+               <li  onClick={toggleDrawer} className="p-3  cursor-pointer hover:bg-white hover:text-black">Works</li>
+               </Link>
+              <Link href={'/#service'}>
+              <li  onClick={toggleDrawer} className="p-3  cursor-pointer hover:bg-white hover:text-black">Service</li>
+              </Link>
+              <Link href={'/#contact'}>
+              <li  onClick={toggleDrawer} className="p-3  cursor-pointer hover:bg-white hover:text-black">Contact</li>
+              </Link>
+               
+              
               </ul>
             </main>
           </Drawer>

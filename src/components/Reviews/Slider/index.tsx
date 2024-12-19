@@ -13,10 +13,10 @@ export default function Slider() {
     <>
       <main className="w-full lg:w-1/2">
         <h4 className="text-[#80db66] text-lg tracking-widest uppercase font-medium mt-5">
-          Work Experience
+          Client Testimonials
         </h4>
-        <h1 className="text-3xl font-semibold sm:text-[50px] lg:text-[70px] my-10">
-          My Experience
+        <h1 className="text-3xl font-semibold sm:text-[50px] lg:text-[70px] my-14">
+          Reviews
         </h1>
         <div className="flex items-start">
           <Image className=" h-12" src={Images.testimonial} alt="" />
@@ -24,7 +24,7 @@ export default function Slider() {
             cssMode={true}
             pagination={{
               clickable: true,
-              el: ".custom-pagination", // Custom class for pagination
+              el: ".custom-pagination", 
             }}
             mousewheel={true}
             keyboard={true}
@@ -33,29 +33,26 @@ export default function Slider() {
           >
             <SwiperSlide className="p-5 py-10">
               <p className="text-2xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                ex, sapiente vel omnis qui fugit accusamus, pariatur eum magnam
-                nemo architecto dolorum necessitatibus alias, rerum veritatis
-                vero molestiae eveniet harum!
+{              "Working with Azaz was a game-changer for our project. His expertise in web development not only improved our site’s functionality but also enhanced user engagement. I highly recommend him!"}
               </p>
+              <p className="font-semibold mt-5">Daria Pechaiko</p>
+              <i>Virtua Digital</i>
             </SwiperSlide>
 
             <SwiperSlide className="p-5 py-10">
               <p className="text-2xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                ex, sapiente vel omnis qui fugit accusamus, pariatur eum magnam
-                nemo architecto dolorum necessitatibus alias, rerum veritatis
-                vero molestiae eveniet harum!
+             { "Azaz brought our mobile app vision to life with his innovative approach and attention to detail. His commitment to delivering high-quality results made the entire process seamless."}
               </p>
+              <p className="font-semibold mt-5">Patrik Jalkell</p>
+              <i>Mirago Media AB.</i>
             </SwiperSlide>
 
             <SwiperSlide className="p-5 py-10">
               <p className="text-2xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                ex, sapiente vel omnis qui fugit accusamus, pariatur eum magnam
-                nemo architecto dolorum necessitatibus alias, rerum veritatis
-                vero molestiae eveniet harum!
+             { "From the initial consultation to the final launch, Azaz demonstrated exceptional skill and dedication. His ability to understand our needs and translate them into effective solutions was impressive."}
               </p>
+              <p className="font-semibold mt-5">Peter Jakubicki</p>
+              <i>FlycoGo</i>
             </SwiperSlide>
           </Swiper>
         
