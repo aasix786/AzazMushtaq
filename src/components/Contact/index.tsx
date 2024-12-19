@@ -31,7 +31,7 @@ export default async function Contact() {
             </div>
             <div>
               <h1 className="text-2xl font-semibold">Email</h1>
-              <p className="text-[#4D4C5C] text-lg">hello@qubohub.com</p>
+              <p className="text-[#4D4C5C] text-lg">aziijnab@gmail.com</p>
             </div>
           </div>
           <div className="flex items-center gap-5">
@@ -40,7 +40,7 @@ export default async function Contact() {
             </div>
             <div>
               <h1 className="text-2xl font-semibold">Phone</h1>
-              <p className="text-[#4D4C5C] text-lg">+123 456 7890</p>
+              <p className="text-[#4D4C5C] text-lg">+1 916 857 8156</p>
             </div>
           </div>
         </section>

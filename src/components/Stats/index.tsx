@@ -9,13 +9,10 @@ export default function Stats() {
             Fun Facts
           </h4>
           <h1 className="text-4xl tracking-widest text-white font-semibold lg:text-[60px] leading-tight ">
-            I Develop System that Works
+          I Build Solutions That Drive Success
           </h1>
           <p className="text-[#A0A0BB] lg:text-xl my-10">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia dese runt mollit anim id est laboru doloremque laudantium,
-            totaeaque ipsa quae ab illo inven tore veritatis et quasi architecto
-            beatae vitae.
+          With a focus on creating efficient, scalable, and impactful systems, I develop websites, mobile apps, and software that work seamlessly and deliver real results. Every project I undertake is crafted with precision and a passion for technology, ensuring robust solutions that align with modern standards and user needs.
           </p>
         </section>
 
@@ -23,7 +20,7 @@ export default function Stats() {
           <div className=" p-5 border-[1px] border-slate-700 flex items-center gap-5 rounded-lg">
             <CountUp
               className="text-[100px] text-[#80db66]"
-              end={12}
+              end={8}
               duration={2.75}
             />
             <h1 className="text-2xl text-white">Years of Experience</h1>
@@ -32,7 +29,7 @@ export default function Stats() {
             <span className="flex">
               <CountUp
                 className="text-[100px] text-[#80db66]"
-                end={2}
+                end={200}
                 duration={2.75}
               />
               <p className="text-[100px] text-[#80db66]">K</p>
@@ -43,7 +40,7 @@ export default function Stats() {
             <span className="flex">
               <CountUp
                 className="text-[100px] text-[#80db66]"
-                end={4}
+                end={80}
                 duration={2.75}
               />
               <p className="text-[100px] text-[#80db66]">K</p>
@@ -53,7 +50,7 @@ export default function Stats() {
           <div className=" p-5     border-[1px] border-slate-700 flex items-center gap-5 rounded-lg">
             <CountUp
               className="text-[100px] text-[#80db66]"
-              end={30}
+              end={5}
               duration={2.75}
             />
             <h1 className="text-2xl text-white">Digital Products</h1>

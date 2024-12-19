@@ -29,8 +29,8 @@ interface Project {
 export default function Portfolio() {
     const projects: Project[] = [ // Specify the type of projects
         {
-            type: "Web Design",
-            title: "Software Design for QuboHub",
+            type: "Web Development",
+            title: "Full Stack Development in a team for Clicky",
             img: Images.clickyWeb,
             detail: [
                 {
@@ -49,8 +49,8 @@ export default function Portfolio() {
             ]
         },
         {
-            type: "Development",
-            title: "Website Development for ABC Corporation",
+            type: "Mobile Application",
+            title: "Cross Platform React Native Development for Interioraty",
             img: Images.mealWeb,
             detail: [
                 {
@@ -68,12 +68,32 @@ export default function Portfolio() {
             ]
         },
         {
-            type: "Development",
-            title: "Website Development for ABC Corporation",
+            type: "Full Stack Development",
+            title: "Backend infrastructure development and frontend design development for Black INK AI powered Tattoo Idea generation website",
             img: Images.jolibeeWeb,
             detail: [
                 {
                     img: Images.jolibeeWeb,
+                    imgMob:Images.clickyMob,
+                    heading: "ABC Corp Website",
+                    desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                    type: "Development",
+                    client: "ABC Corp",
+                    duration: "1 month",
+                    link:"https://www.clicky.pk/",
+                    task: "Full Stack Development",
+                    Budget: "$5000",
+                    tags: ["Development", "E-commerce"]
+                }
+            ]
+        },
+        {
+            type: "Product Development",
+            title: "Mobile and Web Application development for the Product SetMore",
+            img: Images.setMoreWeb,
+            detail: [
+                {
+                    img: Images.setMoreWeb,
                     imgMob:Images.clickyMob,
                     heading: "ABC Corp Website",
                     desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",

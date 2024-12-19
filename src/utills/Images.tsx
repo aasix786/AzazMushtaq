@@ -21,6 +21,8 @@ import clickyMob from '../../public/Images/clicky-mob.png'
 import clickyWeb from '../../public/Images/clicky-web.png'
 import mealWeb from '../../public/Images/meal-web.png'
 import jolibeeWeb from '../../public/Images/jolibee-web.png'
+import setMoreWeb from '../../public/Images/SetMore-web.png'
+
 
 
 
@@ -32,6 +34,7 @@ export const Images={
     person,
     sliderBg,
     jolibeeWeb,
+    setMoreWeb,
     clickyMob,
     clickyWeb,
     mealWeb,

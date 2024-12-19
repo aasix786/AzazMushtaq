@@ -73,7 +73,7 @@ export default function About() {
     </ul>
     <ul className="flex flex-col w-1/2 sm:w-full gap-5">
       <li className="text-lg">Azaz Mushtaq</li>
-      <li className="text-lg">29 Years</li>
+      <li className="text-lg">28 Years</li>
       <li className="text-lg">System Engineer</li>
     </ul>
   </div>
@@ -86,21 +86,21 @@ export default function About() {
       <li className="text-[#4D4C5C] font-semibold text-lg">Nationality</li>
     </ul>
     <ul className="flex flex-col w-1/2 sm:w-full gap-5">
-      <li className="text-lg">+123 456 7890</li>
-      <li className="text-lg">hello@qubohub.com</li>
+      <li className="text-lg">+1 916 857 8156</li>
+      <li className="text-lg">aziijnab@gmail.com</li>
       <li className="text-lg">Pakistani</li>
     </ul>
   </div>
 </section>
 <hr />
 
-<div className=" flex flex-col sm:flex-row items-center gap-10 mt-10">
+{/* <div className=" flex flex-col sm:flex-row items-center gap-10 mt-10">
   <Image src={Images.signature} alt=""/>
   <span className=" flex gap-10 items-center" >
     <h1 className=" uppercase text-xl font-semibold">Bruce Wayne</h1>
     <p className="text-[#4D4C5C] text-lg">Software Architect, Google Inc.</p>
   </span>
-</div>
+</div> */}
 
 
 
