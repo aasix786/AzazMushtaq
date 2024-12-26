@@ -18,9 +18,15 @@ import offer1 from '../../public/Images/offer1.png'
 import testimonial from '../../public/Images/testimonial-icon.png'
 import work from '../../public/Images/work-img.jpg'
 import clickyMob from '../../public/Images/clicky-mob.png'
+import setMore from '../../public/Images/setmore.png'
+import setMoreMob from '../../public/Images/setmoremob.png'
+import setMoreWeb from '../../public/Images/setmoreweb.png'
 import clickyWeb from '../../public/Images/clicky-web.png'
 import mealWeb from '../../public/Images/meal-web.png'
 import jolibeeWeb from '../../public/Images/jolibee-web.png'
+import inkWeb from '../../public/Images/inkweb.png'
+import inkMob from '../../public/Images/inkmob.png'
+
 
 
 
@@ -32,6 +38,11 @@ export const Images={
     person,
     sliderBg,
     jolibeeWeb,
+    setMoreWeb,
+    inkMob,
+    inkWeb,
+    setMore,
+    setMoreMob,
     clickyMob,
     clickyWeb,
     mealWeb,

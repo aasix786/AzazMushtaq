@@ -69,32 +69,32 @@ export default function Portfolio() {
         },
         {
             type: "Full Stack Development",
-            title: "Website Development for ABC Corporation",
-            img: Images.jolibeeWeb,
+            title: "Backend and frontend development for AI powered Tattoo Idea generation website",
+            img: Images.inkWeb,
             detail: [
                 {
-                    img: Images.jolibeeWeb,
-                    imgMob:Images.clickyMob,
+                    img: Images.inkWeb,
+                    imgMob:Images.inkMob,
                     heading: "ABC Corp Website",
-                    desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                    desc: "InkGenius is an AI-powered platform that creates original tattoo designs tailored to your ideas and preferences. INK GENIUS By selecting a tattoo style and inputting your concept, the AI generates a unique design for you. This service aims to streamline the tattoo design process, making it quicker and more personalized. It caters to tattoo enthusiasts, first-timers, and artists seeking inspiration. The platform offers various styles to choose from, ensuring your tattoo is one-of-a-kind. Additionally, InkGenius provides resources like a tattoo cost calculator and a temporary tattoo guide to assist users in their tattoo journey. The platform is designed to make the tattoo experience seamless and enjoyable from start to finish.",
                     type: "Development",
                     client: "ABC Corp",
                     duration: "1 month",
                     link:"https://www.clicky.pk/",
                     task: "Full Stack Development",
                     Budget: "$5000",
-                    tags: ["Development", "E-commerce"]
+                    tags: ["AITattooDesign", "CustomTattoos" , "InkGenius"]
                 }
             ]
         },
         {
             type: "Product Development",
             title: "Mobile and Web Application development for SetMore",
-            img: Images.jolibeeWeb,
+            img: Images.setMore,
             detail: [
                 {
-                    img: Images.jolibeeWeb,
-                    imgMob:Images.clickyMob,
+                    img: Images.setMore,
+                    imgMob:Images.setMoreMob,
                     heading: "Setmore",
                     desc: "Setmore is an online appointment scheduling platform designed for businesses and professionals to streamline bookings and manage client appointments. It offers an intuitive interface with features like calendar integration, automated reminders, and payment processing. Users can create customizable booking pages, enabling clients to book services 24/7. The platform supports team scheduling, making it ideal for businesses of all sizes. Additionally, Setmore integrates with popular apps like Zoom, Google Calendar, and Facebook, enhancing productivity and connectivity.",
                     type: "Development",

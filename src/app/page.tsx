@@ -34,7 +34,7 @@ export default async function Home() {
 
 
       <a
-        href="https://wa.me/19168578156" 
+        href="https://wa.me/923356608917" 
         target="_blank"
         rel="noopener noreferrer"
         style={{
