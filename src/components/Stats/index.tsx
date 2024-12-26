@@ -9,13 +9,10 @@ export default function Stats() {
             Fun Facts
           </h4>
           <h1 className="text-4xl tracking-widest text-white font-semibold lg:text-[60px] leading-tight ">
-            I Develop System that Works
+          I Build Solutions That Drive Success
           </h1>
           <p className="text-[#A0A0BB] lg:text-xl my-10">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia dese runt mollit anim id est laboru doloremque laudantium,
-            totaeaque ipsa quae ab illo inven tore veritatis et quasi architecto
-            beatae vitae.
+          With a focus on creating efficient, scalable, and impactful systems, I develop websites, mobile apps, and software that work seamlessly and deliver real results. Every project I undertake is crafted with precision and a passion for technology, ensuring robust solutions that align with modern standards and user needs.
           </p>
         </section>
 
