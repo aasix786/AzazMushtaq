@@ -42,7 +42,7 @@ export default async function Awards() {
             key={index}
             className="py-10 border-t-[1px] border-b-[1px] flex flex-col lg:flex-row gap-10 lg:gap-14  justify-between"
           >
-            <Image className=" md:h-10" src={item.img} alt="" />
+            <Image className=" md:h-10" src={item.img} priority alt="" />
             <div className="lg:w-[400px] ">
               <h1 className="text-2xl  font-bold   ">
                 {item.title}

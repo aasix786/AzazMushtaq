@@ -57,7 +57,7 @@ export default function Slider() {
           </Swiper>
         
         </div>
-        <div className="custom-pagination ml-16"></div>
+        <div className="custom-pagination flex ml-14 md:ml-16 gap-2 hover:cursor-pointer"></div>
       </main>
     </>
   );

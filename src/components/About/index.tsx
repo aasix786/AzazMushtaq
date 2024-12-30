@@ -37,9 +37,10 @@ export default function About() {
         <section className="w-full md:w-2/5 relative ">
           <Image
             data-aos="fade-right"
-            src={Images.person2}
+            src={Images.aboutImage}
             className="   card pl-10"
-            alt="person"
+            alt="Azaz Mushtaq - Senior Full Stack Developer Profile Photo"
+            priority
           />
           {/* <div
             data-aos="fade-right"

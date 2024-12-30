@@ -3,7 +3,7 @@ import shape1 from '../../public/Images/shape1.png'
 import shape3 from '../../public/Images/shape3.png'
 import shape4 from '../../public/Images/shape4.png'
 import sliderBg from '../../public/Images/slider-bg.jpg'
-import logo from '../../public/Images/logo.png'
+import logo from '../../public/Images/logoPortfolio.png'
 import icon1 from '../../public/Images/intro-ft-icon1.png'
 import icon2 from '../../public/Images/intro-ft-icon2.png'
 import icon3 from '../../public/Images/intro-ft-icon3.png'
@@ -26,6 +26,10 @@ import mealWeb from '../../public/Images/meal-web.png'
 import jolibeeWeb from '../../public/Images/jolibee-web.png'
 import inkWeb from '../../public/Images/inkweb.png'
 import inkMob from '../../public/Images/inkmob.png'
+import heroImage from '../../public/Images/heroImage.png'
+import aboutImage from '../../public/Images/aboutImage.png'
+
+
 
 
 
@@ -37,6 +41,8 @@ import inkMob from '../../public/Images/inkmob.png'
 export const Images={
     person,
     sliderBg,
+    aboutImage,
+    heroImage,
     jolibeeWeb,
     setMoreWeb,
     inkMob,

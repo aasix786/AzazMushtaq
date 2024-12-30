@@ -22,7 +22,7 @@ export default async function Education(){
     return(
         <>
         <main className="p-10 flex flex-col-reverse lg:flex-row-reverse gap-10">
-            <Image className="lg:w-1/2 rounded-xl  mx-auto md:w-[700px]" src={Images.work} alt=""/>
+            <Image className="lg:w-1/2 rounded-xl  mx-auto md:w-[700px]" src={Images.work} priority alt=""/>
             <section className="lg:w-1/2">
             <h4 className="text-[#80db66]  text-lg tracking-widest uppercase font-medium mt-5">Education</h4>
             <h1 className="text-3xl  font-semibold sm:text-[50px] lg:text-[70px] my-10">My Education</h1>

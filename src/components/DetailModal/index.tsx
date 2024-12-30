@@ -16,6 +16,7 @@ interface ProjectDetail {
   link:string;
   Budget: string; 
   tags: string[]; 
+  alt?:string | undefined
 }
 
 
@@ -41,16 +42,16 @@ const DetailModal: React.FC<DetailModalProps> = ({ details, onClose }) => {
         <div className="relative hidden md:!block w-full h-[500px] my-4 ">
           <Image
             src={details.img}
-            alt={details.heading}
+            alt={details.alt || details.heading}
             className="   shadow-2xl rounded-xl w-full h-full "
-            
+            priority
           />
         </div>
        
         {
           details.imgMob &&   <Image
           src={details?.imgMob}
-          alt={details.heading}
+          alt={details.alt || details.heading}
           className=" md:hidden  my-5 w-full   shadow-2xl rounded-xl  "
           
         />

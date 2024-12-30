@@ -17,6 +17,7 @@ interface ProjectDetail {
     Budget: string; 
     link:string;
     tags: string[]; 
+    alt?:string | undefined
 }
 
 interface Project {
@@ -44,7 +45,8 @@ export default function Portfolio() {
                     task: "UI/UX Frontend",
                     Budget: "$2000",
                     link:"https://www.clicky.pk/",
-                    tags: ["Web Design", "Social Media"]
+                    tags: ["Web Design", "Social Media"],
+                    alt:"React Native Mobile App for Soil Testing"
                 }
             ]
         },
@@ -63,7 +65,8 @@ export default function Portfolio() {
                     link:"https://www.clicky.pk/",
                     task: "Full Stack Development",
                     Budget: "$5000",
-                    tags: ["Development", "E-commerce"]
+                    tags: ["Development", "E-commerce"],
+                    alt:"Responsive WordPress Landing Page Design"
                 }
             ]
         },
@@ -139,6 +142,7 @@ export default function Portfolio() {
                                     className="w-48 shadow-lg rounded-lg transition-transform duration-500 ease-in-out"
                                     src={item.img}
                                     alt=""
+                                    priority
                                 />
                                 <span 
                                     className="h-20 w-20 border-[1px] rounded-full relative group-hover:bg-[#80db66] cursor-pointer"

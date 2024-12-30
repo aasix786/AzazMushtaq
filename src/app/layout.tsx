@@ -21,9 +21,24 @@ export const metadata: Metadata = {
     title:"Azaz Mushtaq - Senior Full Stack Developer | React Native Developer | NodeJS, Laravel Developer, & Social Media Expert",
     description:"Explore Azaz Mushtaq's portfolio showcasing expertise in web development, mobile application development, social media marketing, and creative design",
     images:"https://aasix786.github.io/AzazMushtaq/assets/profile.jpg"
-  }
-  
-  
+  },
+  manifest:"/site.webmanifes",
+  icons:[
+    {
+      url:"/favicon-32x32.png",
+      sizes:"32x32",
+    },
+    {
+      url:"/favicon-16x16.png",
+      sizes:"16x16",
+    },
+    {
+      rel:"apple-touch-icon",
+      url:"/apple-touch-icon.png",
+      sizes:"180x180"
+    },
+  ]
+
 };
 
 export default function RootLayout({
@@ -34,6 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+    
       >
         <Navbar/>
         {children}

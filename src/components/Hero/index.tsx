@@ -14,6 +14,7 @@ export default function Hero() {
     backgroundImage: `url('${Images.sliderBg.src}')`,
     width: "100%",
     height: "100%",
+    
   };
 
   return (
@@ -59,6 +60,7 @@ export default function Hero() {
             className="hidden lg:!block absolute left-0 bottom-10 "
             src={Images.shape3}
             alt=""
+            priority
           />
         </section>
 
@@ -68,18 +70,21 @@ export default function Hero() {
           </div>
           <Image
             className="relative z-10 w-60 h-80 sm:h-auto sm:w-auto"
-            src={Images.person}
-            alt="Person"
+            src={Images.heroImage}
+            alt="Azaz Mushtaq - Senior Full Stack Developer Profile Photo"
+            priority
           />
           <Image
             className="hidden lg:!block absolute right-10 top-10 w-[55px]"
             src={Images.shape1}
-            alt=""
+            alt="Person"
+            priority
           />
           <Image
             className="hidden lg:!block absolute left-0 top-16 w-[55px]"
             src={Images.shape4}
-            alt=""
+            alt="Person"
+            priority
           />
         </section>
         {/* <section className="hidden lg:!block h-60 lg:!absolute right-4 top-52">

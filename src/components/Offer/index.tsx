@@ -57,7 +57,7 @@ export default function Offer() {
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-10 py-10">
         {services.map((service) => (
           <div key={service.id} className="bg-white p-5 md:p-10 flex items-start gap-5 rounded-xl card">
-            <Image src={service.image} alt={service.title} />
+            <Image src={service.image} priority alt={service.title} />
             <div>
               <h1 className="text-xl font-semibold md:text-2xl lg:text-4xl">{service.title}</h1>
               <p className="my-2 md:text-lg text-[#4D4C5C]">{service.description}</p>

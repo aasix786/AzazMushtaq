@@ -44,10 +44,11 @@ export default function Navbar() {
        <Link href={'/'}>
        <Image
           className={`transition-all duration-300 ease-in-out ${
-            sticky ? "w-[130px]" : "w-[130px] sm:w-1/7"
+            sticky ? "w-[220px]" : "w-[220px] sm:w-1/7"
           }`}
           src={Images.logo}
-          alt="logo"
+          alt="logo" 
+          priority
         />
        </Link>
         <section className=" hidden  lg:!flex justify-between items-center gap-10">
