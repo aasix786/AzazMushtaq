@@ -22,11 +22,11 @@ export default async function Education(){
     return(
         <>
         <main className="p-10 flex flex-col-reverse lg:flex-row-reverse gap-10">
-            <Image className="lg:w-1/2 rounded-xl  mx-auto md:w-[700px]" src={Images.work} priority alt=""/>
+            <Image className="lg:w-1/2 rounded-xl  mx-auto md:w-[700px]" src={Images.work} priority alt="Education"/>
             <section className="lg:w-1/2">
             <h4 className="text-[#80db66]  text-lg tracking-widest uppercase font-medium mt-5">Education</h4>
             <h2 className="text-3xl  font-semibold sm:text-[50px] lg:text-[70px] my-10">My Education</h2>
-            <p className="text-[#4D4C5C] lg:text-xl my-5">Sed ut perspiciatis unde omnis iste natus kobita tumi sopno charini hoye khbor nio na sit voluptatem.</p>
+           
             <section className="my-5">
                 {
                     data.map((item,index)=>(

@@ -35,7 +35,7 @@ export default async function Awards() {
           Success Stories
         </h4>
         <h2 className="text-3xl text-center font-semibold sm:text-[50px] md:text-[70px] my-10 mb-20">
-          Awards & Achivements
+          Awards & Achievements
         </h2>
         {data.map((item, index) => (
           <section

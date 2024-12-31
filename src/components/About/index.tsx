@@ -42,21 +42,7 @@ export default function About() {
             alt="Azaz Mushtaq - Senior Full Stack Developer Profile Photo"
             priority
           />
-          {/* <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            className=" h-20 w-20 absolute  top-20 bg-[#80DB66]"
-          ></div>
-                    <div data-aos="fade-right" className=" -z-10 h-32 w-32 absolute bottom-[100px] border-[4px] -top-5 right-[70px] border-[#80DB66]"></div>
-          <div data-aos="fade-right" className=" h-16 w-12 absolute bottom-72 left-52 bg-[#80DB66]"></div>
 
-          <Image
-            data-aos="fade-right"
-            src={Images.download}
-            className="absolute w-60 bottom-48 left-[-70px] rotate-animation"
-            alt=""
-          /> */}
         </section>
         <section className="md:w-3/5">
           <h2 className=" text-[#80DB66] uppercase text-xl tracking-widest">
@@ -103,15 +89,6 @@ export default function About() {
             </div>
           </section>
           <hr />
-          {/* <div className=" flex flex-col sm:flex-row items-center gap-10 mt-10">
-            <Image src={Images.signature} alt="" />
-            <span className=" flex gap-10 items-center">
-              <h2 className=" uppercase text-xl font-semibold">Bruce Wayne</h2>
-              <p className="text-[#4D4C5C] text-lg">
-                Software Architect, Google Inc.
-              </p>
-            </span>
-          </div> */}
         </section>
       </main>
       <Animation />

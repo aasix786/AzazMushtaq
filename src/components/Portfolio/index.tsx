@@ -135,13 +135,13 @@ export default function Portfolio() {
                         <section key={index} className="py-10 border-t-[1px] border-b-[1px] flex flex-col xl:flex-row group justify-between">
                             <div className="flex flex-col sm:flex-row justify-between items-center gap-20">
                                 <p className="text-lg font-medium  lg:w-[180px]">{item.type}</p>
-                                <h2 className="text-2xl text-center sm:text-left lg:text-[35px] font-bold max-w-[600px] !leading-[70px]">{item.title}</h2>
+                                <h1 className="text-2xl text-center sm:text-left lg:text-[35px] font-bold max-w-[600px] !leading-[70px]">{item.title}</h1>
                             </div>
                             <div className="flex items-center justify-between sm:gap-20 lg:gap-10">
                                 <Image
                                     className="w-48 shadow-lg rounded-lg transition-transform duration-500 ease-in-out"
                                     src={item.img}
-                                    alt=""
+                                    alt={item.title}
                                     priority
                                 />
                                 <span 
