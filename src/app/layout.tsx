@@ -13,32 +13,32 @@ export const metadata: Metadata = {
     url:"https://aasix786.github.io/AzazMushtaq/",
     title:"Azaz Mushtaq - Senior Full Stack Developer | React Native Developer | NodeJS, Laravel Developer, & Social Media Expert",
     description:"Explore Azaz Mushtaq's portfolio showcasing expertise in web development, mobile application development, social media marketing, and creative design.",
-    images:"https://aasix786.github.io/AzazMushtaq/assets/profile.jpg",
+    images:"https://aasix786.github.io/AzazMushtaq/Images/aboutImage.png",
     type:"website"
   },
   twitter:{
     card:"summary_large_image",
     title:"Azaz Mushtaq - Senior Full Stack Developer | React Native Developer | NodeJS, Laravel Developer, & Social Media Expert",
     description:"Explore Azaz Mushtaq's portfolio showcasing expertise in web development, mobile application development, social media marketing, and creative design",
-    images:"https://aasix786.github.io/AzazMushtaq/assets/profile.jpg"
+    images:"https://aasix786.github.io/AzazMushtaq/Images/aboutImage.png"
   },
   manifest:"/site.webmanifest",
   icons:[
     {
-       url:"https://aasix786.github.io/AzazMushtaq/assets/favicon.png",
+       url:"https://aasix786.github.io/AzazMushtaq/favicon.png",
        type:"image/png"
     },
     {
-      url:"/favicon-32x32.png",
+      url:"https://aasix786.github.io/AzazMushtaq/favicon-32x32.png",
       sizes:"32x32",
     },
     {
-      url:"/favicon-16x16.png",
+      url:"https://aasix786.github.io/AzazMushtaq/favicon-16x16.png",
       sizes:"16x16",
     },
     {
       rel:"apple-touch-icon",
-      url:"/apple-touch-icon.png",
+      url:"https://aasix786.github.io/AzazMushtaq/apple-touch-icon.png",
       sizes:"180x180"
     },
   ]
