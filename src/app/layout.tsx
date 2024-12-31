@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:"Explore Azaz Mushtaq's portfolio showcasing expertise in web development, mobile application development, social media marketing, and creative design",
     images:"https://aasix786.github.io/AzazMushtaq/assets/profile.jpg"
   },
-  manifest:"/site.webmanifes",
+  manifest:"/site.webmanifest",
   icons:[
     {
        url:"https://aasix786.github.io/AzazMushtaq/assets/favicon.png",
@@ -52,23 +52,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-642559554"></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-642559554');
-          `}
-        </script>
-      </head>
-      <body
-    
-      >
-        <Navbar/>
-        {children}
-      </body>
-    </html>
+    <head>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=AW-642559554"
+      ></Script>
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-642559554');
+        `}
+      </Script>
+    </head>
+    <body>
+      <Navbar />
+      {children}
+    </body>
+  </html>
   );
 }
