@@ -129,13 +129,13 @@ export default function Portfolio() {
         <>
             <main id="work" className="p-10 ">
                 <h4 className="text-[#80db66] text-center text-lg tracking-widest uppercase font-medium mt-5">Portfolio</h4>
-                <h1 className="text-3xl text-center font-semibold sm:text-[50px] md:text-[70px] my-10">My Recent Works</h1>
+                <h2 className="text-3xl text-center font-semibold sm:text-[50px] md:text-[70px] my-10">My Recent Works</h2>
                 {
                     projects.map((item, index) => (
                         <section key={index} className="py-10 border-t-[1px] border-b-[1px] flex flex-col xl:flex-row group justify-between">
                             <div className="flex flex-col sm:flex-row justify-between items-center gap-20">
                                 <p className="text-lg font-medium  lg:w-[180px]">{item.type}</p>
-                                <h1 className="text-2xl text-center sm:text-left lg:text-[35px] font-bold max-w-[600px] !leading-[70px]">{item.title}</h1>
+                                <h2 className="text-2xl text-center sm:text-left lg:text-[35px] font-bold max-w-[600px] !leading-[70px]">{item.title}</h2>
                             </div>
                             <div className="flex items-center justify-between sm:gap-20 lg:gap-10">
                                 <Image

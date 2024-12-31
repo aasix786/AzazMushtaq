@@ -46,20 +46,20 @@ export default function Pricing() {
       <h4 className="text-[#80db66] text-lg tracking-widest uppercase font-medium mt-5 text-center">
         Let’s Start Working
       </h4>
-      <h1 className="text-3xl font-semibold sm:text-[50px] lg:text-[70px] my-10 text-center">
+      <h2 className="text-3xl font-semibold sm:text-[50px] lg:text-[70px] my-10 text-center">
         Pricing Plans
-      </h1>
+      </h2>
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 py-10">
         {pricingPlans.map((plan, index) => (
           <div
             key={index}
             className="bg-white shadow-xl p-5 md:p-10 rounded-xl hover:-translate-y-5 transition-all duration-300"
           >
-            <h1 className="border-b-[1px] border-black pb-5 text-2xl text-black font-semibold w-full">
+            <h2 className="border-b-[1px] border-black pb-5 text-2xl text-black font-semibold w-full">
               {plan.name}
-            </h1>
+            </h2>
             <span className="flex items-center gap-3">
-              <h1 className="text-[60px] text-[#80db66] font-bold">${plan.price}</h1>
+              <h2 className="text-[60px] text-[#80db66] font-bold">${plan.price}</h2>
               <p className="mt-5 text-xl">/ {plan.frequency}</p>
             </span>
             <ul>

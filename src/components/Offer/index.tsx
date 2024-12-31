@@ -51,15 +51,15 @@ export default function Offer() {
   return (
     <main id="service" className="p-10 bg-[#25262F]">
       <h4 className="text-[#80db66] text-lg tracking-widest uppercase font-medium mt-5 text-center">Service</h4>
-      <h1 className="text-3xl font-semibold sm:text-[50px] lg:text-[70px] my-10 text-white text-center">
+      <h2 className="text-3xl font-semibold sm:text-[50px] lg:text-[70px] my-10 text-white text-center">
         What I Offer
-      </h1>
+      </h2>
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-10 py-10">
         {services.map((service) => (
           <div key={service.id} className="bg-white p-5 md:p-10 flex items-start gap-5 rounded-xl card">
             <Image src={service.image} priority alt={service.title} />
             <div>
-              <h1 className="text-xl font-semibold md:text-2xl lg:text-4xl">{service.title}</h1>
+              <h2 className="text-xl font-semibold md:text-2xl lg:text-4xl">{service.title}</h2>
               <p className="my-2 md:text-lg text-[#4D4C5C]">{service.description}</p>
             </div>
           </div>

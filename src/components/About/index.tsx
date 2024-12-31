@@ -59,12 +59,12 @@ export default function About() {
           /> */}
         </section>
         <section className="md:w-3/5">
-          <h1 className=" text-[#80DB66] uppercase text-xl tracking-widest">
+          <h2 className=" text-[#80DB66] uppercase text-xl tracking-widest">
             About Me
-          </h1>
-          <h1 className="text-4xl tracking-widest font-semibold lg:text-[60px] leading-tight ">
+          </h2>
+          <h2 className="text-4xl tracking-widest font-semibold lg:text-[60px] leading-tight ">
             I Develop System that Works
-          </h1>
+          </h2>
           <p className="text-[#4D4C5C] lg:text-xl my-5">
             {
               "As the CTO and Full Stack Developer at Onism Solution, I am dedicated to creating innovative software solutions that transform industries. With a Master's in Computer Science and extensive experience across various programming languages, frameworks, and databases, I specialize in building robust, scalable applications that deliver exceptional user experiences."
@@ -106,7 +106,7 @@ export default function About() {
           {/* <div className=" flex flex-col sm:flex-row items-center gap-10 mt-10">
             <Image src={Images.signature} alt="" />
             <span className=" flex gap-10 items-center">
-              <h1 className=" uppercase text-xl font-semibold">Bruce Wayne</h1>
+              <h2 className=" uppercase text-xl font-semibold">Bruce Wayne</h2>
               <p className="text-[#4D4C5C] text-lg">
                 Software Architect, Google Inc.
               </p>

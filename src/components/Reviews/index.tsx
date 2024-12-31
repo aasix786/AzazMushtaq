@@ -10,7 +10,7 @@ export default async function Reviews(){
          <Slider/>
          </div>
          <div className="lg:w-1/2">
-         <Image className=" rounded-xl " src={Images.work} alt=""/>
+         <Image className=" rounded-xl " src={Images.work} alt="Review Image"/>
          </div>
         </main>
         </>

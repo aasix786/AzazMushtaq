@@ -10,9 +10,9 @@ export default async function Contact() {
         <h4 className="text-[#80db66]  text-lg tracking-widest uppercase font-medium mt-5 text-center">
           Contact Me
         </h4>
-        <h1 className="text-3xl  font-semibold sm:text-[50px] lg:text-[70px] my-10  text-center">
+        <h2 className="text-3xl  font-semibold sm:text-[50px] lg:text-[70px] my-10  text-center">
           Let’s Start A New Project
-        </h1>
+        </h2>
         <div className=" flex flex-col lg:flex-row gap-10 lg:items-start mt-20 ">
           <section className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-10  lg:w-1/2">
             <div className="flex items-center gap-5">
@@ -20,7 +20,7 @@ export default async function Contact() {
                 <IoLocationSharp className="text-xl" />
               </div>
               <div>
-                <h1 className="text-2xl font-semibold">Location</h1>
+                <h2 className="text-2xl font-semibold">Location</h2>
                 <p className="text-[#4D4C5C] text-lg">Lahore, Pakistan</p>
               </div>
             </div>
@@ -35,7 +35,7 @@ export default async function Contact() {
                 </div>
               </a>
               <div>
-                <h1 className="text-2xl font-semibold">Email</h1>
+                <h2 className="text-2xl font-semibold">Email</h2>
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=aziijnab@gmail.com"
                   target="_blank"
@@ -54,7 +54,7 @@ export default async function Contact() {
                 </div>
               </Link>
               <div>
-                <h1 className="text-2xl font-semibold">Phone</h1>
+                <h2 className="text-2xl font-semibold">Phone</h2>
                 <Link href={`tel:+1 916 857 8156`}>
                   <p className="text-[#4D4C5C] text-lg cursor-pointer">
                     +1 916 857 8156

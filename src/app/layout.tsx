@@ -6,8 +6,8 @@ import Navbar from "@/components/Navbar";
 
 
 export const metadata: Metadata = {
-  title: "Azaz Mushtaq - Senior Full Stack Developer | React Native Developer | NodeJS, Laravel Developer, & Social Media Expert",
-  description: "Explore Azaz Mushtaq's portfolio featuring expertise in React Native, ReactJS, NodeJS, WordPress, social media marketing, and creative design. Connect for tailored, high-quality solutions.",
+  title: "Azaz Mushtaq - Senior Full Stack & React Native Developer | NodeJS & Laravel Expert",
+  description: "Explore Azaz Mushtaq's portfolio in React Native, ReactJS, NodeJS, WordPress, social media marketing, and design. Connect for quality, tailored solutions.",
   keywords:["Azaz Mushtaq portfolio" , "Senior frontend developer" , "React Native developer" , "Mobile App Developer" , "Backend Developer" , "NodeJS Developer" , "Laravel Developer" , "Social media marketing expert" , "Creative UI/UX designer" , "Freelance developer" , "Full-stack developer"],
   openGraph:{
     url:"https://aasix786.github.io/AzazMushtaq/",

@@ -34,25 +34,25 @@ export default async function Awards() {
         <h4 className="text-[#80db66] text-center text-lg tracking-widest uppercase font-medium mt-5">
           Success Stories
         </h4>
-        <h1 className="text-3xl text-center font-semibold sm:text-[50px] md:text-[70px] my-10 mb-20">
+        <h2 className="text-3xl text-center font-semibold sm:text-[50px] md:text-[70px] my-10 mb-20">
           Awards & Achivements
-        </h1>
+        </h2>
         {data.map((item, index) => (
           <section
             key={index}
             className="py-10 border-t-[1px] border-b-[1px] flex flex-col lg:flex-row gap-10 lg:gap-14  justify-between"
           >
-            <Image className=" md:h-10" src={item.img} priority alt="" />
+            <Image className=" md:h-10" src={item.img} priority alt="Awards Image" />
             <div className="lg:w-[400px] ">
-              <h1 className="text-2xl  font-bold   ">
+              <h2 className="text-2xl  font-bold   ">
                 {item.title}
-              </h1>
+              </h2>
               <p>{item.year}</p>
             </div>
             <div className=" lg:w-[400px]">
-              <h1 className="text-2xl  font-bold  ">
+              <h2 className="text-2xl  font-bold  ">
                 {item.company}
-              </h1>
+              </h2>
               <p>{item.place}</p>
             </div>
             <p className="">{item.desc}</p>

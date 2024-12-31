@@ -32,9 +32,9 @@ export default function Slider() {
         <h4 className="text-[#80db66] text-lg tracking-widest uppercase font-medium mt-5">
           Client Testimonials
         </h4>
-        <h1 className="text-3xl font-semibold sm:text-[50px] lg:text-[70px] my-14">
+        <h2 className="text-3xl font-semibold sm:text-[50px] lg:text-[70px] my-14">
           Reviews
-        </h1>
+        </h2>
         <div className="flex items-start w-full ">
       <Image className="h-12" src={Images.testimonial} alt="Testimonial Icon" />
       <Swiper

@@ -28,7 +28,7 @@ export default function CardSection() {
         />
         <section className="bg-white shadow-sm flex flex-col gap-5 p-10 px-5 lg:py-14 rounded-lg max-w-[400px] card">
           <Image className="w-10 lg:w-[60px]" src={Images.icon1} priority alt="" />
-          <h1 className="font-semibold text-2xl">Dedication</h1>
+          <h2 className="font-semibold text-2xl">Dedication</h2>
           <p className=" text-[#4D4C5C]">
             The heart of my work is dedication. I’m passionate about creating
             high-quality solutions that make a difference. Every project is a
@@ -40,7 +40,7 @@ export default function CardSection() {
 
         <section className="bg-white shadow-sm flex flex-col gap-5 p-10 px-5 lg:py-14 rounded-lg max-w-[400px] card lg:mt-32">
           <Image className="w-10 lg:w-[60px]" priority src={Images.icon2} alt="" />
-          <h1 className="font-semibold text-2xl">Smart Work</h1>
+          <h2 className="font-semibold text-2xl">Smart Work</h2>
           <p className=" text-[#4D4C5C]">
             It’s not just about working harder—it’s about working smarter. I
             stay up-to-date with the latest tools and strategies to deliver
@@ -52,7 +52,7 @@ export default function CardSection() {
 
         <section className="bg-white shadow-sm flex flex-col gap-5 px-5 p-10 lg:py-14 rounded-lg max-w-[400px] card">
           <Image className="w-10 lg:w-[50px]" src={Images.icon3} priority alt="" />
-          <h1 className="font-semibold text-2xl">Collaboration</h1>
+          <h2 className="font-semibold text-2xl">Collaboration</h2>
           <p className=" text-[#4D4C5C]">
             Collaboration is key to every great project. I value the ideas and
             input of each team member, working together to create solutions that
@@ -64,7 +64,7 @@ export default function CardSection() {
 
         <section className="bg-white shadow-sm flex flex-col gap-5 p-10 px-5 lg:py-14 rounded-lg max-w-[400px] card lg:mt-32">
           <Image className="w-10 lg:w-[60px]" src={Images.icon4} priority alt="" />
-          <h1 className="font-semibold text-2xl">Technology</h1>
+          <h2 className="font-semibold text-2xl">Technology</h2>
           <p className=" text-[#4D4C5C]">
             Technology is always evolving, and so am I. I’m constantly exploring
             new tech and trends to keep my work future-ready. By integrating

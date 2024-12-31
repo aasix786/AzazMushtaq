@@ -27,9 +27,9 @@ export default function Hero() {
           <h2 className="text-[#80DB66] mt-32 text-center lg:text-left text-xl font-bold tracking-[10px]">
             {"HELLO I'M"}
           </h2>
-          <h1 className="text-white text-[50px] tracking-widest md:text-[80px] lg:text-[90px] text-center lg:text-left lg:w-1/3 font-bold">
+          <h2 className="text-white text-[50px] tracking-widest md:text-[80px] lg:text-[90px] text-center lg:text-left lg:w-1/3 font-bold">
             Azaz Mushtaq
-          </h1>
+          </h2>
           <div className="text-center lg:text-left">
             <span className="text-lg md:text-2xl font-semibold text-white">
               A Passionate{" "}
@@ -59,7 +59,7 @@ export default function Hero() {
           <Image
             className="hidden lg:!block absolute left-0 bottom-10 "
             src={Images.shape3}
-            alt=""
+            alt="Shape 3"
             priority
           />
         </section>
@@ -77,13 +77,13 @@ export default function Hero() {
           <Image
             className="hidden lg:!block absolute right-10 top-10 w-[55px]"
             src={Images.shape1}
-            alt="Person"
+            alt="Shape 1"
             priority
           />
           <Image
             className="hidden lg:!block absolute left-0 top-16 w-[55px]"
             src={Images.shape4}
-            alt="Person"
+            alt="Shape 4"
             priority
           />
         </section>
