@@ -28,6 +28,8 @@ import inkWeb from '../../public/Images/inkweb.png'
 import inkMob from '../../public/Images/inkmob.png'
 import heroImage from '../../public/Images/heroImage.png'
 import aboutImage from '../../public/Images/aboutImage.png'
+import interiorApp from '../../public/Images/interiorApp.png'
+
 
 
 
@@ -41,6 +43,7 @@ import aboutImage from '../../public/Images/aboutImage.png'
 export const Images={
     person,
     sliderBg,
+    interiorApp,
     aboutImage,
     heroImage,
     jolibeeWeb,

@@ -5,9 +5,13 @@ import Image from "next/image";
 export default async function Reviews(){
     return(
         <>
-        <main className="bg-[#E2ECF6] p-10 flex flex-col lg:flex-row gap-10">
+        <main className="bg-[#E2ECF6] p-10 flex flex-col gap-10 lg:flex-row overflow-x-hidden">
+         <div className="lg:w-1/2">
          <Slider/>
-         <Image className="lg:w-1/2 rounded-xl  mx-auto md:w-[700px]" src={Images.work} alt=""/>
+         </div>
+         <div className="lg:w-1/2">
+         <Image className=" rounded-xl " src={Images.work} alt=""/>
+         </div>
         </main>
         </>
     )

@@ -53,19 +53,19 @@ export default function Portfolio() {
         {
             type: "Mobile Application",
             title: "Cross Platform React Native Development for Interioraty ",
-            img: Images.mealWeb,
+            img: Images.interiorApp,
             detail: [
                 {
-                    img: Images.mealWeb,
-                    heading: "ABC Corp Website",
-                    desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                    img: Images.interiorApp,
+                    heading: "Home AI - AI Interior Design",
+                    desc: "The Interior Home Design AI app is your ultimate companion for transforming your living spaces with ease. Powered by advanced AI technology, the app helps you visualize and create stunning interior designs tailored to your preferences. Upload photos of your space and get personalized design suggestions, from furniture placement to color palettes. Explore a variety of styles, experiment with layouts, and see real-time previews using augmented reality. Whether you're redecorating, remodeling, or planning a new design, this app simplifies the process, making professional-grade interior design accessible to everyone.",
                     type: "Development",
                     client: "ABC Corp",
                     duration: "1 month",
-                    link:"https://www.clicky.pk/",
+                    link:"https://play.google.com/store/apps/details?id=interior.home.design.ai&hl=en",
                     task: "Full Stack Development",
                     Budget: "$5000",
-                    tags: ["Development", "E-commerce"],
+                    tags: ["Interior Design", "Room Makeover" , "AI Home Design"],
                     alt:"Responsive WordPress Landing Page Design"
                 }
             ]

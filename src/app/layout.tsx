@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Azaz Mushtaq - Senior Full Stack Developer | React Native Developer | NodeJS, Laravel Developer, & Social Media Expert",
-  description: "Discover Azaz Mushtaq's portfolio, showcasing expertise in React Native, ReactJS, NodeJS, WordPress development, social media marketing, and creative design. Connect for professional, high-quality solutions tailored to your needs.",
+  description: "Explore Azaz Mushtaq's portfolio featuring expertise in React Native, ReactJS, NodeJS, WordPress, social media marketing, and creative design. Connect for tailored, high-quality solutions.",
   keywords:["Azaz Mushtaq portfolio" , "Senior frontend developer" , "React Native developer" , "Mobile App Developer" , "Backend Developer" , "NodeJS Developer" , "Laravel Developer" , "Social media marketing expert" , "Creative UI/UX designer" , "Freelance developer" , "Full-stack developer"],
   openGraph:{
     url:"https://aasix786.github.io/AzazMushtaq/",
@@ -24,6 +24,10 @@ export const metadata: Metadata = {
   },
   manifest:"/site.webmanifes",
   icons:[
+    {
+       url:"https://aasix786.github.io/AzazMushtaq/assets/favicon.png",
+       type:"image/png"
+    },
     {
       url:"/favicon-32x32.png",
       sizes:"32x32",
