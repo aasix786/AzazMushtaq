@@ -22,6 +22,7 @@ export default function Hero() {
       <main
         className="w-full pt-20 sm:pt-16 px-7 sm:px-10 lg:flex justify-between"
         style={styling}
+        id="home"
       >
         <section className="relative pb-10">
           <h2 className="text-[#80DB66] mt-32 text-center lg:text-left text-xl font-bold tracking-[10px]">
