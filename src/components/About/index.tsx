@@ -53,7 +53,7 @@ export default function About() {
           </h2>
           <p className="text-[#4D4C5C] lg:text-xl my-5">
             {
-              "As the CTO and Full Stack Developer at Onism Solution, I am dedicated to creating innovative software solutions that transform industries. With a Master's in Computer Science and extensive experience across various programming languages, frameworks, and databases, I specialize in building robust, scalable applications that deliver exceptional user experiences."
+              "As a Full Stack Developer at Onism Solution, I am dedicated to creating innovative software solutions that transform industries. With a Master's in Computer Science and extensive experience across various programming languages, frameworks, and databases, I specialize in building robust, scalable applications that deliver exceptional user experiences."
             }
           </p>
           <hr />
