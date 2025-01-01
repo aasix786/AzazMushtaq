@@ -32,6 +32,8 @@ import interiorApp from '../../public/Images/interiorApp.png'
 import onismLogo from '../../public/Images/onismLogo.png'
 import truckloadLogo from '../../public/Images/TruckloadLogo.webp'
 import synxLogo from '../../public/Images/synxLogo.png'
+import synx from '../../public/Images/synx.jpg'
+
 
 
 
@@ -47,6 +49,7 @@ import synxLogo from '../../public/Images/synxLogo.png'
 export const Images={
     person,
     sliderBg,
+    synx,
     interiorApp,
     aboutImage,
     heroImage,
