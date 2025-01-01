@@ -25,6 +25,14 @@ export default function Navbar() {
     setIsOpen((prevState) => !prevState);
   };
 
+  const handleScroll = (id: string , event: React.MouseEvent) => {
+    event.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   useEffect(() => {
     window.addEventListener("scroll", handleStickyNavbar);
     return () => {
@@ -53,27 +61,27 @@ export default function Navbar() {
        </Link>
         <section className=" hidden  lg:!flex justify-between items-center gap-10">
           <ul className="flex justify-between gap-10 text-white">
-           <Link href={'/#home'}>
+           <Link  href="#" onClick={(e) => handleScroll('home' , e)}>
            <li className="hover:text-[#80DB66] font-semibold cursor-pointer">
               Home
             </li>
            </Link>
-         <Link href={'/#about'}>
+         <Link  href="#" onClick={(e) => handleScroll('about' , e)}>
          <li className="hover:text-[#80DB66] font-semibold cursor-pointer">
               About
             </li>
          </Link>
-            <Link href={'/#work'}>
+            <Link href="#" onClick={(e) => handleScroll('work' , e)}>
             <li className="hover:text-[#80DB66] font-semibold cursor-pointer">
               Works
             </li>
             </Link>
-            <Link href={'/#service'}>
+            <Link href="#" onClick={(e) => handleScroll('service' , e)}>
             <li className="hover:text-[#80DB66] font-semibold cursor-pointer">
               Service
             </li>
             </Link>
-           <Link href={'/#contact'}>
+           <Link href="#" onClick={(e) => handleScroll("contact" , e)}>
            <li className="hover:text-[#80DB66] font-semibold cursor-pointer">
               Contact
             </li>
@@ -110,21 +118,21 @@ export default function Navbar() {
                 className=" text-2xl absolute right-2 top-2 text-white"
               />
               <ul className="flex flex-col mt-20 gap-5 text-white">
-               <Link href={'/#home'}>
+               <Link href="#" onClick={(e) => handleScroll('home' , e)}>
                <li  onClick={toggleDrawer} className="p-3 hover:bg-white hover:text-black  cursor-pointer">
                   Home
                 </li>
                </Link>
-               <Link href={'/#about'}>
+               <Link href="#" onClick={(e) => handleScroll('about' , e)}>
                <li  onClick={toggleDrawer} className="p-3  cursor-pointer hover:bg-white hover:text-black">About</li>
                </Link>
-               <Link href={'/#work'}>
+               <Link href="#" onClick={(e) => handleScroll('work' , e)}>
                <li  onClick={toggleDrawer} className="p-3  cursor-pointer hover:bg-white hover:text-black">Works</li>
                </Link>
-              <Link href={'/#service'}>
+              <Link href="#" onClick={(e) => handleScroll('service' , e)}>
               <li  onClick={toggleDrawer} className="p-3  cursor-pointer hover:bg-white hover:text-black">Service</li>
               </Link>
-              <Link href={'/#contact'}>
+              <Link href="#" onClick={(e) => handleScroll('contact' , e)}>
               <li  onClick={toggleDrawer} className="p-3  cursor-pointer hover:bg-white hover:text-black">Contact</li>
               </Link>
                
