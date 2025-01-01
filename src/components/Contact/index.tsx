@@ -1,9 +1,43 @@
+"use client"
 import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import Link from "next/link";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
-export default async function Contact() {
+export default function Contact() {
+  const form = useRef<HTMLFormElement>(null);  
+  const [isLoading, setIsLoading] = useState(false);
+  const [message , setMessage] = useState("")
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+  
+    emailjs
+      .sendForm(
+        "service_rttcrhi", 
+        "template_1tltn0r", 
+        form.current!, 
+        "Dso5ZIjFry38Qk0FD" 
+      )
+      .then(
+        () => {
+          setIsLoading(false);
+          setMessage("Your Email has been sent successfully");
+          setTimeout(() => setMessage(""), 3000); 
+        },
+        (error) => {
+          console.log(error);
+          setMessage("Failed to send email. Please try again.");
+          setIsLoading(false);
+          setTimeout(() => setMessage(""), 3000); 
+        }
+      );
+  };
+  
+
   return (
     <>
       <main id="contact" className="p-10">
@@ -63,38 +97,50 @@ export default async function Contact() {
               </div>
             </div>
           </section>
-          <section className="  lg:w-1/2">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+          <section className="w-full lg:w-1/2" >
+          <form ref={form} className="w-full  ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
               <input
                 type="text"
                 placeholder="Your Name"
+                name="from_name"
                 className="p-3 text-[#4D4C5C] text-lg border-[1px] border-[#4D4C5C] rounded-lg outline-[#80db66]"
               />
               <input
                 type="text"
                 placeholder="Your Email"
+                name="email"
                 className="p-3 text-[#4D4C5C] text-lg border-[1px] border-[#4D4C5C] rounded-lg outline-[#80db66]"
               />
               <input
                 type="text"
                 placeholder="Your Phone"
+                name="phone"
                 className="p-3 text-[#4D4C5C] text-lg border-[1px] border-[#4D4C5C] rounded-lg outline-[#80db66]"
               />
               <input
                 type="text"
                 placeholder="Your Subject"
+                name="subject"
                 className="p-3 text-[#4D4C5C] text-lg border-[1px] border-[#4D4C5C] rounded-lg outline-[#80db66]"
               />
             </div>
             <textarea
               placeholder="Start Writing Message Here.."
+              name="message"
               rows={5}
               className="p-3 w-full my-10  text-[#4D4C5C] text-lg border-[1px] border-[#4D4C5C] rounded-lg outline-[#80db66]"
             ></textarea>
 
-            <button className="p-2 px-8 bg-[#80db66] text-lg tracking-widest text-white  rounded-lg">
-              Submit Now
+            <button onClick={sendEmail} className="p-2 px-8 bg-[#80db66] text-lg tracking-widest text-white  rounded-lg">
+              {
+                isLoading ? "Sending..." : "Send Message"
+              }
             </button>
+            {
+              message && <p className="text-sm text-[#4D4C5C] my-2">{message}</p>
+            }
+          </form>
           </section>
         </div>
       </main>
