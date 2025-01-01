@@ -71,16 +71,17 @@ export default function RootLayout({
         `}
       </Script>
       <Script type="application/ld+json">
-      {`
-         "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Azaz Mushtaq",
-    "url": "https://aasix786.github.io/AzazMushtaq",
-    "image": "https://aasix786.github.io/AzazMushtaq/Images/preview.png",
-    "description": "Senior Full Stack & React Native Developer"
-  });
-        `}
-  </Script>
+  {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Azaz Mushtaq",
+      "url": "https://aasix786.github.io/AzazMushtaq",
+      "image": "https://aasix786.github.io/AzazMushtaq/Images/preview.png",
+      "description": "Senior Full Stack & React Native Developer"
+    }
+  `}
+</Script>
     </head>
     <body>
       <Navbar />
