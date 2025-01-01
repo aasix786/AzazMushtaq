@@ -13,14 +13,14 @@ export const metadata: Metadata = {
     url:"https://aasix786.github.io/AzazMushtaq/",
     title:"Azaz Mushtaq - Senior Full Stack Developer | React Native Developer | NodeJS, Laravel Developer, & Social Media Expert",
     description:"Explore Azaz Mushtaq's portfolio showcasing expertise in web development, mobile application development, social media marketing, and creative design.",
-    images:"https://aasix786.github.io/AzazMushtaq/Images/aboutImage.png",
-    type:"website"
+    images:"https://aasix786.github.io/AzazMushtaq/Images/preview.png",
+    type:"website"    
   },
   twitter:{
     card:"summary_large_image",
     title:"Azaz Mushtaq - Senior Full Stack Developer | React Native Developer | NodeJS, Laravel Developer, & Social Media Expert",
     description:"Explore Azaz Mushtaq's portfolio showcasing expertise in web development, mobile application development, social media marketing, and creative design",
-    images:"https://aasix786.github.io/AzazMushtaq/Images/aboutImage.png"
+    images:"https://aasix786.github.io/AzazMushtaq/Images/preview.png"
   },
   manifest:"/site.webmanifest",
   icons:[
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   ]
 
 };
-
+const canonicalUrl = "https://aasix786.github.io/AzazMushtaq";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -53,6 +53,8 @@ export default function RootLayout({
   return (
     <html lang="en">
     <head>
+    <link rel="canonical" href={canonicalUrl} />
+  
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=AW-642559554"
@@ -68,6 +70,17 @@ export default function RootLayout({
   });
         `}
       </Script>
+      <Script type="application/ld+json">
+      {`
+         "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Azaz Mushtaq",
+    "url": "https://aasix786.github.io/AzazMushtaq",
+    "image": "https://aasix786.github.io/AzazMushtaq/Images/preview.png",
+    "description": "Senior Full Stack & React Native Developer"
+  });
+        `}
+  </Script>
     </head>
     <body>
       <Navbar />
