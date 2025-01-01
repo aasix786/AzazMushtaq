@@ -29,6 +29,10 @@ import inkMob from '../../public/Images/inkmob.png'
 import heroImage from '../../public/Images/heroImage.png'
 import aboutImage from '../../public/Images/aboutImage.png'
 import interiorApp from '../../public/Images/interiorApp.png'
+import onismLogo from '../../public/Images/onismLogo.png'
+import truckloadLogo from '../../public/Images/TruckloadLogo.webp'
+import synxLogo from '../../public/Images/synxLogo.png'
+
 
 
 
@@ -71,5 +75,8 @@ export const Images={
     shape3,
     shape1,
     logo,
-    shape4
+    shape4,
+    onismLogo,
+    synxLogo,
+    truckloadLogo
 }

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default async function Awards() {
   const data = [
     {
-      img: Images.brand,
+      img: Images.onismLogo,
       title: "Top Software Engineer",
       year: "2024",
       company: "Onism Solution LLC",
@@ -12,7 +12,7 @@ export default async function Awards() {
       desc: "Honored for expertise in software engineering, achieving excellence in building robust and scalable systems for clients across various industries.",
     },
     {
-      img: Images.brand,
+      img: Images.synxLogo,
       title: "Outstanding Mobile App Developer",
       year: "2022",
       company: "Synx",
@@ -20,7 +20,7 @@ export default async function Awards() {
       desc: "Recognized for exceptional skill in mobile app development, delivering innovative solutions that enhance user experience and functionality.",
     },
     {
-      img: Images.brand,
+      img: Images.truckloadLogo,
       title: "Excellence in Web Development",
       year: "2021",
       company: "Truckload",
@@ -42,7 +42,7 @@ export default async function Awards() {
             key={index}
             className="py-10 border-t-[1px] border-b-[1px] flex flex-col lg:flex-row gap-10 lg:gap-14  justify-between"
           >
-            <Image className=" md:h-10" src={item.img} priority alt="Awards Image" />
+            <Image className=" md:h-10 md:w-20" src={item.img} priority alt="Awards Image" />
             <div className="lg:w-[400px] ">
               <h2 className="text-2xl  font-bold   ">
                 {item.title}
