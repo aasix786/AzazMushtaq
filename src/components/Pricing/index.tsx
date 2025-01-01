@@ -7,6 +7,7 @@ const pricingPlans = [
     price: 20,
     frequency: "Per Hour",
     features: [
+      { text: "Stacks: Laravel (php) | NodeJS", included: true },
       { text: "One time contract", included: true },
       { text: "Flexible Contract", included: true },
       { text: "Source Files", included: true },
@@ -19,6 +20,7 @@ const pricingPlans = [
     price: 15,
     frequency: "Per Hour",
     features: [
+      { text: "Stacks: ReactJS | NextJS | VueJS | React Native | Flutter", included: true },
       { text: "One time contract", included: true },
       { text: "Flexible Contract", included: true },
       { text: "Source Files", included: true },
@@ -27,7 +29,7 @@ const pricingPlans = [
     ],
   },
   {
-    name: "React Native Developer",
+    name: "React Native / Flutter Developer",
     price: 20,
     frequency: "Per Hour",
     features: [

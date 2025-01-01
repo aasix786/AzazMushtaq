@@ -43,7 +43,7 @@ const DetailModal: React.FC<DetailModalProps> = ({ details, onClose }) => {
           <Image
             src={details.img}
             alt={details.alt || details.heading}
-            className="   shadow-2xl rounded-xl w-full h-full "
+            className="   shadow-2xl rounded-xl w-full h-full object-contain"
             priority
           />
         </div>
@@ -78,9 +78,7 @@ const DetailModal: React.FC<DetailModalProps> = ({ details, onClose }) => {
             <p>
               <strong>Task:</strong> {details.task}
             </p>
-            <p>
-              <strong>Budget:</strong> {details.Budget}
-            </p>
+          
            <a href={details.link} target="_blank">
            <button className="p-2 px-4 bg-[#80db66] text-white uppercase rounded-lg my-5">
               View Live

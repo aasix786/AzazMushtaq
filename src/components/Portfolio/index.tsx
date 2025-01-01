@@ -39,14 +39,14 @@ export default function Portfolio() {
                     imgMob:Images.clickyMob,
                     heading: "Clicky.pk",
                     desc: "Clicky.pk is an online shopping platform offering a wide range of fashion and lifestyle products for men, women, and kids. It features a diverse selection of clothing, footwear, accessories, and beauty products from top local and international brands. Clicky.pk aims to provide customers with a seamless shopping experience, offering high-quality products at competitive prices, along with fast shipping and easy returns. The website is user-friendly, with categories and filters for easy navigation, and often hosts sales and promotions, making it a go-to destination for fashion-forward shoppers in Pakistan.",
-                    type: "Web Design",
-                    client: "Juwel Khan",
-                    duration: "2 weeks",
-                    task: "UI/UX Frontend",
+                    type: "Web/Mobile App Development",
+                    client: "Khalid Muhammad",
+                    duration: "1+ Years (On-Going Support)",
+                    task: "Vue.js | Nuxt.js | React Native | UI/UX",
                     Budget: "$2000",
                     link:"https://www.clicky.pk/",
-                    tags: ["Web Design", "Social Media"],
-                    alt:"React Native Mobile App for Soil Testing"
+                    tags: ["Web Development, Mobile App Development, React Native Development, Web Design", "Social Media"],
+                    alt:"Full Stack Development for Clicky.pk"
                 }
             ]
         },
@@ -59,14 +59,14 @@ export default function Portfolio() {
                     img: Images.interiorApp,
                     heading: "Home AI - AI Interior Design",
                     desc: "The Interior Home Design AI app is your ultimate companion for transforming your living spaces with ease. Powered by advanced AI technology, the app helps you visualize and create stunning interior designs tailored to your preferences. Upload photos of your space and get personalized design suggestions, from furniture placement to color palettes. Explore a variety of styles, experiment with layouts, and see real-time previews using augmented reality. Whether you're redecorating, remodeling, or planning a new design, this app simplifies the process, making professional-grade interior design accessible to everyone.",
-                    type: "Development",
-                    client: "ABC Corp",
-                    duration: "1 month",
+                    type: "Mobile App Development",
+                    client: "HubX YAZILIM",
+                    duration: "+8 months",
                     link:"https://play.google.com/store/apps/details?id=interior.home.design.ai&hl=en",
-                    task: "Full Stack Development",
+                    task: "Hybrid Mobile App Development",
                     Budget: "$5000",
-                    tags: ["Interior Design", "Room Makeover" , "AI Home Design"],
-                    alt:"Responsive WordPress Landing Page Design"
+                    tags: ["React Native Development", "Mobile App Development" , "Cross Platform Apps", "React Native App","Mobile Development"],
+                    alt:"Mobile app development for Home AI"
                 }
             ]
         },
@@ -78,15 +78,15 @@ export default function Portfolio() {
                 {
                     img: Images.inkWeb,
                     imgMob:Images.inkMob,
-                    heading: "ABC Corp Website",
+                    heading: "Ink Genius",
                     desc: "InkGenius is an AI-powered platform that creates original tattoo designs tailored to your ideas and preferences. INK GENIUS By selecting a tattoo style and inputting your concept, the AI generates a unique design for you. This service aims to streamline the tattoo design process, making it quicker and more personalized. It caters to tattoo enthusiasts, first-timers, and artists seeking inspiration. The platform offers various styles to choose from, ensuring your tattoo is one-of-a-kind. Additionally, InkGenius provides resources like a tattoo cost calculator and a temporary tattoo guide to assist users in their tattoo journey. The platform is designed to make the tattoo experience seamless and enjoyable from start to finish.",
-                    type: "Development",
-                    client: "ABC Corp",
-                    duration: "1 month",
-                    link:"https://www.clicky.pk/",
-                    task: "Full Stack Development",
+                    type: "Website Development",
+                    client: "Darren Lee",
+                    duration: "+4 month",
+                    link:"https://ink-genius.dukanify.com/",
+                    task: "Web Development",
                     Budget: "$5000",
-                    tags: ["AITattooDesign", "CustomTattoos" , "InkGenius"]
+                    tags: ["NextJS", "NodeJS", "AI", "Python Image Generation", "Machine Learning", "Web Development", "AI Models", "Generative AI", "Tech Stack", "Full Stack Development"]
                 }
             ]
         },
@@ -98,15 +98,15 @@ export default function Portfolio() {
                 {
                     img: Images.setMore,
                     imgMob:Images.setMoreMob,
-                    heading: "Setmore",
-                    desc: "Setmore is an online appointment scheduling platform designed for businesses and professionals to streamline bookings and manage client appointments. It offers an intuitive interface with features like calendar integration, automated reminders, and payment processing. Users can create customizable booking pages, enabling clients to book services 24/7. The platform supports team scheduling, making it ideal for businesses of all sizes. Additionally, Setmore integrates with popular apps like Zoom, Google Calendar, and Facebook, enhancing productivity and connectivity.",
+                    heading: "SetMore",
+                    desc: "SetMore is an online appointment scheduling platform designed for businesses and professionals to streamline bookings and manage client appointments. It offers an intuitive interface with features like calendar integration, automated reminders, and payment processing. Users can create customizable booking pages, enabling clients to book services 24/7. The platform supports team scheduling, making it ideal for businesses of all sizes. Additionally, Setmore integrates with popular apps like Zoom, Google Calendar, and Facebook, enhancing productivity and connectivity.",
                     type: "Development",
-                    client: "ABC Corp",
-                    duration: "1 month",
+                    client: "Bryce Morrow",
+                    duration: "+3 month",
                     link:"https://www.setmore.com/",
                     task: "Product Development",
                     Budget: "$5000",
-                    tags: ["Appointment Scheduling", "Business Productivity Tool"]
+                    tags: ["NextJS", "NodeJS", "Python Image Generation", "Web Development", "Tech Stack", "Full Stack Development"]
                 }
             ]
         }

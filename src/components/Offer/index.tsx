@@ -15,7 +15,7 @@ const services=[
       {
         id: 2,
         title: "App Development",
-        description: "Create engaging and intuitive mobile applications across platforms.",
+        description: "Build captivating and user-friendly mobile applications for multiple platforms.",
         image: Images.offer1,
       },
       {
