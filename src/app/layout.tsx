@@ -63,17 +63,11 @@ export default function RootLayout({
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'AW-642559554');
-        `}
-      </Script>
-      <Script id="google-analytics">
-        {`
-           gtag('config', 'AW-642559554/sD-sCPj12_4ZEMLcsrIC', {
+          gtag('config', 'AW-642559554/sD-sCPj12_4ZEMLcsrIC', {
     'phone_conversion_number': '+1 916 857 8156'
   });
         `}
       </Script>
-   
-
     </head>
     <body>
       <Navbar />
