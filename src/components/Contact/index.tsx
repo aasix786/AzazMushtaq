@@ -82,16 +82,16 @@ export default function Contact() {
             </div>
 
             <div className="flex items-center gap-5 w-max ">
-              <Link href={`tel:+1 916 857 8156`}>
+              <Link href={`tel:+19168578156`}>
                 <div className=" bg-[#80db66] p-5 rounded-full text-white hover:bg-white hover:text-[#80db66] hover:border-[1px] hover:border-[#80db66] cursor-pointer ">
                   <FaPhoneAlt className="text-xl" />
                 </div>
               </Link>
               <div>
-                <h2 className="text-2xl font-semibold">Phone</h2>
-                <Link href={`tel:+1 916 857 8156`}>
+                <h2 className="text-2xl font-semibold">Phone (United States)</h2>
+                <Link href={`tel:+19168578156`}>
                   <p className="text-[#4D4C5C] text-lg cursor-pointer">
-                    +1 (916) 857-8156
+                  (916) 857-8156
                   </p>
                 </Link>
               </div>

@@ -66,7 +66,7 @@ export default function RootLayout({
           gtag('js', new Date());
           gtag('config', 'AW-642559554');
           gtag('config', 'AW-642559554/sD-sCPj12_4ZEMLcsrIC', {
-    'phone_conversion_number': '+1 916 857 8156'
+    'phone_conversion_number': '(916) 857-8156'
   });
         `}
       </Script>

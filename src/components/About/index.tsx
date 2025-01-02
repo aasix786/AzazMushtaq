@@ -82,7 +82,7 @@ export default function About() {
                 </li>
               </ul>
               <ul className="flex flex-col w-1/2 sm:w-full gap-5">
-                <li className="text-lg">+1 916 857 8156</li>
+                <li className="text-lg">(916) 857-8156</li>
                 <li className="text-lg">aziijnab@gmail.com</li>
                 <li className="text-lg">Pakistani</li>
               </ul>
