@@ -73,7 +73,7 @@ export default function Navbar() {
          </Link>
             <Link href="#" onClick={(e) => handleScroll('work' , e)}>
             <li className="hover:text-[#80DB66] font-semibold cursor-pointer">
-              Works
+              Portfolio
             </li>
             </Link>
             <Link href="#" onClick={(e) => handleScroll('service' , e)}>
