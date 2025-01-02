@@ -91,7 +91,7 @@ export default function Contact() {
                 <h2 className="text-2xl font-semibold">Phone</h2>
                 <Link href={`tel:+1 916 857 8156`}>
                   <p className="text-[#4D4C5C] text-lg cursor-pointer">
-                    +1 916 857 8156
+                    +1 (916) 857-8156
                   </p>
                 </Link>
               </div>
