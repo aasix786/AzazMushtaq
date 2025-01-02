@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -7,36 +7,61 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
-  const form = useRef<HTMLFormElement>(null);  
+  const form = useRef<HTMLFormElement>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [message , setMessage] = useState("")
+  const [message, setMessage] = useState("");
+  const [errors, setErrors] = useState<{ email?: string; phone?: string }>({});
+
+  const validateFields = (email: string, phone: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+    const phoneRegex = /^\+\d{1,3}\s\d{7,14}$/; 
+    const newErrors: { email?: string; phone?: string } = {};
+
+    if (!emailRegex.test(email)) {
+      newErrors.email = "Invalid email format.";
+    }
+
+    if (!phoneRegex.test(phone)) {
+      newErrors.phone = "Phone number must start with + and include country code.";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-  
+
+    const email = form.current?.email?.value;
+    const phone = form.current?.phone?.value;
+
+    if (!validateFields(email, phone)) {
+      setIsLoading(false);
+      return;
+    }
+
     emailjs
       .sendForm(
-        "service_rttcrhi", 
-        "template_1tltn0r", 
-        form.current!, 
-        "Dso5ZIjFry38Qk0FD" 
+        "service_rttcrhi",
+        "template_1tltn0r",
+        form.current!,
+        "Dso5ZIjFry38Qk0FD"
       )
       .then(
         () => {
           setIsLoading(false);
           setMessage("Your Email has been sent successfully");
-          setTimeout(() => setMessage(""), 3000); 
+          setTimeout(() => setMessage(""), 3000);
         },
         (error) => {
           console.log(error);
           setMessage("Failed to send email. Please try again.");
           setIsLoading(false);
-          setTimeout(() => setMessage(""), 3000); 
+          setTimeout(() => setMessage(""), 3000);
         }
       );
   };
-  
 
   return (
     <>
@@ -47,10 +72,10 @@ export default function Contact() {
         <h2 className="text-3xl  font-semibold sm:text-[50px] lg:text-[70px] my-10  text-center">
           Let’s Start A New Project
         </h2>
-        <div className=" flex flex-col lg:flex-row gap-10 lg:items-start mt-20 ">
-          <section className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-10  lg:w-1/2">
+        <div className="flex flex-col lg:flex-row gap-10 lg:items-start mt-20">
+          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-10  lg:w-1/2">
             <div className="flex items-center gap-5">
-              <div className=" bg-[#80db66] p-5 rounded-full text-white hover:bg-white hover:text-[#80db66] hover:border-[1px] hover:border-[#80db66] cursor-pointer ">
+              <div className="bg-[#80db66] p-5 rounded-full text-white hover:bg-white hover:text-[#80db66] hover:border-[1px] hover:border-[#80db66] cursor-pointer">
                 <IoLocationSharp className="text-xl" />
               </div>
               <div>
@@ -80,10 +105,9 @@ export default function Contact() {
                 </a>
               </div>
             </div>
-
             <div className="flex items-center gap-5 w-max ">
               <Link href={`tel:+19168578156`}>
-                <div className=" bg-[#80db66] p-5 rounded-full text-white hover:bg-white hover:text-[#80db66] hover:border-[1px] hover:border-[#80db66] cursor-pointer ">
+                <div className=" bg-[#80db66] p-5 rounded-full text-white hover:bg-white hover:text-[#80db66] hover:border-[1px] hover:border-[#80db66] cursor-pointer">
                   <FaPhoneAlt className="text-xl" />
                 </div>
               </Link>
@@ -97,50 +121,58 @@ export default function Contact() {
               </div>
             </div>
           </section>
-          <section className="w-full lg:w-1/2" >
-          <form ref={form} className="w-full  ">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-              <input
-                type="text"
-                placeholder="Your Name"
-                name="from_name"
-                className="p-3 text-[#4D4C5C] text-lg border-[1px] border-[#4D4C5C] rounded-lg outline-[#80db66]"
-              />
-              <input
-                type="text"
-                placeholder="Your Email"
-                name="email"
-                className="p-3 text-[#4D4C5C] text-lg border-[1px] border-[#4D4C5C] rounded-lg outline-[#80db66]"
-              />
-              <input
-                type="text"
-                placeholder="Your Phone"
-                name="phone"
-                className="p-3 text-[#4D4C5C] text-lg border-[1px] border-[#4D4C5C] rounded-lg outline-[#80db66]"
-              />
-              <input
-                type="text"
-                placeholder="Your Subject"
-                name="subject"
-                className="p-3 text-[#4D4C5C] text-lg border-[1px] border-[#4D4C5C] rounded-lg outline-[#80db66]"
-              />
+          <section className="w-full lg:w-1/2">
+            <form ref={form} className="w-full">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 place-items-start">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  name="from_name"
+                  className="p-3 w-full text-[#4D4C5C] text-lg border-[1px] border-[#4D4C5C] rounded-lg outline-[#80db66]"
+                />
+            <div className="w-full">
+            <input
+                  type="text"
+                  placeholder="Your Email"
+                  name="email"
+                  className="p-3 w-full text-[#4D4C5C] text-lg border-[1px] border-[#4D4C5C] rounded-lg outline-[#80db66]"
+                />
+                  {errors.email && (
+                  <p className="text-sm mt-2 text-red-500">{errors.email}</p>
+                )}
             </div>
-            <textarea
-              placeholder="Start Writing Message Here.."
-              name="message"
-              rows={5}
-              className="p-3 w-full my-10  text-[#4D4C5C] text-lg border-[1px] border-[#4D4C5C] rounded-lg outline-[#80db66]"
-            ></textarea>
-
-            <button onClick={sendEmail} className="p-2 px-8 bg-[#80db66] text-lg tracking-widest text-white  rounded-lg">
-              {
-                isLoading ? "Sending..." : "Send Message"
-              }
-            </button>
-            {
-              message && <p className="text-sm text-[#4D4C5C] my-2">{message}</p>
-            }
-          </form>
+                <div className="w-full">
+                <input
+                  type="text"
+                  placeholder="Your Phone"
+                  name="phone"
+                  className="p-3 w-full text-[#4D4C5C] text-lg border-[1px] border-[#4D4C5C] rounded-lg outline-[#80db66]"
+                />
+                  {errors.phone && (
+                  <p className="text-sm mt-2 text-red-500">{errors.phone}</p>
+                )}
+                </div>
+                <input
+                  type="text"
+                  placeholder="Your Subject"
+                  name="subject"
+                  className="p-3 w-full text-[#4D4C5C] text-lg border-[1px] border-[#4D4C5C] rounded-lg outline-[#80db66]"
+                />
+              </div>
+              <textarea
+                placeholder="Start Writing Message Here.."
+                name="message"
+                rows={5}
+                className="p-3 w-full my-10  text-[#4D4C5C] text-lg border-[1px] border-[#4D4C5C] rounded-lg outline-[#80db66]"
+              ></textarea>
+              <button
+                onClick={sendEmail}
+                className="p-2 px-8 bg-[#80db66] text-lg tracking-widest text-white  rounded-lg"
+              >
+                {isLoading ? "Sending..." : "Send Message"}
+              </button>
+              {message && <p className="text-sm text-[#4D4C5C] my-2">{message}</p>}
+            </form>
           </section>
         </div>
       </main>
