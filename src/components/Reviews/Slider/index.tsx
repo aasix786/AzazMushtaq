@@ -11,17 +11,17 @@ import './style.css'
 export default function Slider() {
   const testimonials = [
     {
-      content: "Working with Azaz was a game-changer for our project. His expertise in web development not only improved our site’s functionality but also enhanced user engagement. I highly recommend him!",
+      content: "Working with Jason was a game-changer for our project. His expertise in web development not only improved our site’s functionality but also enhanced user engagement. I highly recommend him!",
       name: "Daria Pechaiko",
       company: "Virtua Digital"
     },
     {
-      content: "Azaz brought our mobile app vision to life with his innovative approach and attention to detail. His commitment to delivering high-quality results made the entire process seamless.",
+      content: "Jason brought our mobile app vision to life with his innovative approach and attention to detail. His commitment to delivering high-quality results made the entire process seamless.",
       name: "Patrik Jalkell",
       company: "Mirago Media AB."
     },
     {
-      content: "From the initial consultation to the final launch, Azaz demonstrated exceptional skill and dedication. His ability to understand our needs and translate them into effective solutions was impressive.",
+      content: "From the initial consultation to the final launch, Jason demonstrated exceptional skill and dedication. His ability to understand our needs and translate them into effective solutions was impressive.",
       name: "Peter Jakubicki",
       company: "FlycoGo"
     }

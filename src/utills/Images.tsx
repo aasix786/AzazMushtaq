@@ -3,7 +3,7 @@ import shape1 from '../../public/Images/shape1.png'
 import shape3 from '../../public/Images/shape3.png'
 import shape4 from '../../public/Images/shape4.png'
 import sliderBg from '../../public/Images/slider-bg.jpg'
-import logo from '../../public/Images/logoPortfolio.png'
+import logo from '../../public/FullStackDeveloper.png'
 import icon1 from '../../public/Images/intro-ft-icon1.png'
 import icon2 from '../../public/Images/intro-ft-icon2.png'
 import icon3 from '../../public/Images/intro-ft-icon3.png'
@@ -33,6 +33,7 @@ import onismLogo from '../../public/Images/onismLogo.png'
 import truckloadLogo from '../../public/Images/TruckloadLogo.webp'
 import synxLogo from '../../public/Images/synxLogo.png'
 import synx from '../../public/Images/synx.jpg'
+import processDiagram from '../../public/Process.png'
 
 
 
@@ -81,5 +82,6 @@ export const Images={
     shape4,
     onismLogo,
     synxLogo,
-    truckloadLogo
+    truckloadLogo,
+    processDiagram,
 }

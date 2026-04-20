@@ -7,7 +7,10 @@ import { TypeAnimation } from "react-type-animation";
 // import { FaLinkedinIn } from "react-icons/fa";
 
 import "./style.css";
-import Link from "next/link";
+
+const CALENDLY_URL =
+  process.env.NEXT_PUBLIC_CALENDLY_URL ??
+  "https://calendly.com/jasonhammer/30min";
 
 export default function Hero() {
   const styling = {
@@ -29,37 +32,52 @@ export default function Hero() {
             {"HELLO I'M"}
           </h2>
           <h2 className="text-white text-[50px] tracking-widest md:text-[80px] lg:text-[90px] text-center lg:text-left lg:w-1/3 font-bold">
-            Azaz Mushtaq
+            Jason Hammer
           </h2>
           <div className="text-center lg:text-left">
             <span className="text-lg md:text-2xl font-semibold text-white">
               A Passionate{" "}
             </span>
             <TypeAnimation
-              sequence={[
-                "Software Engineer",
-                1000,
-                "Full Stack Developer",
-                1000,
-                "Web Developer",
-                1000,
-                "Mobile App Engineer",
-                1000,
-                "AI Expert",
-                1000,
-              ]}
+            sequence={[
+              "Senior Mobile App Engineer",
+              1200,
+              "React Native Specialist",
+              1200,
+              "Full-Stack Architect (Node.js & Laravel)",
+              1200,
+              "Scalable App Solutions Expert",
+              1200,
+              "Startup Tech Consultant",
+              1200,
+            ]}
               wrapper="span"
               speed={50}
               className="text-md md:text-4xl font-semibold text-[#80DB66]"
               repeat={Infinity}
             />
           </div>
-          <div className="flex justify-center lg:justify-start my-10">
-           <Link href={'https://www.linkedin.com/in/azaz-mushtaq/'}>
-           <button className="bg-[#80DB66] p-2 px-4 text-center md:py-4 md:px-10 tracking-widest font-semibold uppercase rounded-md text-white">
-              Say Hello
+          <div className="flex flex-col items-center lg:items-start gap-6 my-10">
+            <button
+              type="button"
+              className="bg-[#80DB66] p-2 px-4 text-center md:py-4 md:px-10 tracking-widest font-semibold uppercase rounded-md text-white hover:opacity-90 transition-opacity"
+              onClick={() => {
+                if (typeof window === "undefined") return;
+                if (window.Calendly) {
+                  window.Calendly.initPopupWidget({ url: CALENDLY_URL });
+                } else {
+                  window.open(CALENDLY_URL, "_blank", "noopener,noreferrer");
+                }
+              }}
+            >
+              Schedule time with me
             </button>
-           </Link>
+            <Image
+              src={Images.processDiagram}
+              alt="How to schedule a meeting — step by step"
+              className="w-full max-w-md lg:max-w-4xl rounded-md object-contain mt-10"
+              sizes="(max-width: 1023px) 100vw, 56rem"
+            />
           </div>
           <Image
             className="hidden lg:!block absolute left-0 bottom-10 "
@@ -76,7 +94,7 @@ export default function Hero() {
           <Image
             className="relative z-10 w-60 h-80 sm:h-auto sm:w-auto"
             src={Images.heroImage}
-            alt="Azaz Mushtaq - Senior Full Stack Developer Profile Photo"
+            alt="Jason Hammer - Senior Full Stack Developer Profile Photo"
             priority
           />
           <Image

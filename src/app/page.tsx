@@ -1,4 +1,5 @@
 import { FaWhatsapp } from "react-icons/fa";
+import { WHATSAPP_WA_ME } from "@/constants/contact";
 import About from "@/components/About";
 import Animation from "@/components/About/Animation";
 import Awards from "@/components/Awards";
@@ -34,7 +35,7 @@ export default async function Home() {
 
 
       <a
-        href="https://wa.me/923356608917" 
+        href={WHATSAPP_WA_ME} 
         target="_blank"
         rel="noopener noreferrer"
         style={{

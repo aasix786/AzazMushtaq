@@ -7,6 +7,7 @@ import Image from "next/image";
 import VanillaTilt from "vanilla-tilt";
 import "./style.css";
 import Animation from "./Animation";
+import { WHATSAPP_DISPLAY } from "@/constants/contact";
 
 export default function About() {
   const cardRef = useRef(null);
@@ -39,7 +40,7 @@ export default function About() {
             data-aos="fade-right"
             src={Images.aboutImage}
             className="   card pl-10"
-            alt="Azaz Mushtaq - Senior Full Stack Developer Profile Photo"
+            alt="Jason Hammer - Senior Full Stack Developer Profile Photo"
             priority
           />
 
@@ -68,22 +69,22 @@ export default function About() {
                 </li>
               </ul>
               <ul className="flex flex-col w-1/2 sm:w-full gap-5">
-                <li className="text-lg">Azaz Mushtaq</li>
+                <li className="text-lg">Jason Hammer</li>
                 <li className="text-lg">29 Years</li>
                 <li className="text-lg">System Engineer</li>
               </ul>
             </div>
             <div className="grid grid-cols-2 mt-5 sm:mt-0 md:mt-5 lg:mt-0 ">
               <ul className="flex flex-col gap-5">
-                <li className="text-[#4D4C5C] font-semibold text-lg">Phone</li>
+                <li className="text-[#4D4C5C] font-semibold text-lg">WhatsApp</li>
                 <li className="text-[#4D4C5C] font-semibold text-lg">Email</li>
                 <li className="text-[#4D4C5C] font-semibold text-lg">
                   Nationality
                 </li>
               </ul>
               <ul className="flex flex-col w-1/2 sm:w-full gap-5">
-                <li className="text-lg">(916) 857-8156</li>
-                <li className="text-lg">aziijnab@gmail.com</li>
+                <li className="text-lg">{WHATSAPP_DISPLAY}</li>
+                <li className="text-lg">jasonhammer918@gmail.com</li>
                 <li className="text-lg">Pakistani</li>
               </ul>
             </div>

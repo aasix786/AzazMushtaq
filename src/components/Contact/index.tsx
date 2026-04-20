@@ -1,8 +1,8 @@
 "use client";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
-import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
+import { WHATSAPP_DISPLAY, WHATSAPP_WA_ME } from "@/constants/contact";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -14,15 +14,16 @@ export default function Contact() {
 
   const validateFields = (email: string, phone: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
-    const phoneRegex = /^\+\d{1,3}\s\d{7,14}$/; 
     const newErrors: { email?: string; phone?: string } = {};
 
     if (!emailRegex.test(email)) {
       newErrors.email = "Invalid email format.";
     }
 
-    if (!phoneRegex.test(phone)) {
-      newErrors.phone = "Phone number must start with + and include country code.";
+    const normalizedPhone = (phone ?? "").replace(/[\s-]/g, "");
+    if (!normalizedPhone || !/^\+[1-9]\d{6,14}$/.test(normalizedPhone)) {
+      newErrors.phone =
+        "Enter a valid number with country code (e.g. +92 301 4955483).";
     }
 
     setErrors(newErrors);
@@ -85,7 +86,7 @@ export default function Contact() {
             </div>
             <div className="flex items-center gap-5">
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=aziijnab@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=jasonhammer918@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -96,28 +97,35 @@ export default function Contact() {
               <div>
                 <h2 className="text-2xl font-semibold">Email</h2>
                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=aziijnab@gmail.com"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=jasonhammer918@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#4D4C5C] text-lg"
                 >
-                  aziijnab@gmail.com
+                  jasonhammer918@gmail.com
                 </a>
               </div>
             </div>
             <div className="flex items-center gap-5 w-max ">
-              <Link href={`tel:+19168578156`}>
+              <a
+                href={WHATSAPP_WA_ME}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className=" bg-[#80db66] p-5 rounded-full text-white hover:bg-white hover:text-[#80db66] hover:border-[1px] hover:border-[#80db66] cursor-pointer">
-                  <FaPhoneAlt className="text-xl" />
+                  <FaWhatsapp className="text-xl" />
                 </div>
-              </Link>
+              </a>
               <div>
-                <h2 className="text-2xl font-semibold">Phone (United States)</h2>
-                <Link href={`tel:+19168578156`}>
-                  <p className="text-[#4D4C5C] text-lg cursor-pointer">
-                  (916) 857-8156
-                  </p>
-                </Link>
+                <h2 className="text-2xl font-semibold">WhatsApp</h2>
+                <a
+                  href={WHATSAPP_WA_ME}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#4D4C5C] text-lg cursor-pointer"
+                >
+                  {WHATSAPP_DISPLAY}
+                </a>
               </div>
             </div>
           </section>
@@ -144,7 +152,7 @@ export default function Contact() {
                 <div className="w-full">
                 <input
                   type="text"
-                  placeholder="Your Phone"
+                  placeholder="Your WhatsApp (+country code)"
                   name="phone"
                   className="p-3 w-full text-[#4D4C5C] text-lg border-[1px] border-[#4D4C5C] rounded-lg outline-[#80db66]"
                 />
