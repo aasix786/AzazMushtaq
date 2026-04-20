@@ -12,7 +12,7 @@ let nextConfig = {
 console.log("process.env.NODE_ENV")
 console.log(process.env.NODE_ENV)
 if(process.env.NODE_ENV != "development"){
-    nextConfig.basePath = "/AzazMushtaq"
+    nextConfig.basePath = ""
 }
  
 export default nextConfig;
